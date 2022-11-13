@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>INFINI|映纷创意</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: lightgrey;
+			}
+			#top{
+				width: 100%;
+				height: 130px;
+				background-color: black;
+				text-align: center;
+				float: left;
+			}
+			#img{
+				width: 200px;
+				height: 80px;
+				margin: 10px auto;
+				/* border: 1px solid red; */
+			}
+			#img > img{
+				width: 100%;
+				vertical-align: bottom;
+			}
+			.A{
+				/* border: 1px solid red; */
+				font-size: 20px;
+				text-decoration: none;
+				color: gray;
+				margin-top: 0;
+				margin-left: 200px;
+			}
+			.A:hover{
+				color: white;
+			}
+			#wrap{
+				width: 1800px;
+				/* border: 1px solid blue; */
+				margin: 0px auto;
+				overflow: hidden;
+			}
+			.turnleft,.turnright{
+				width: 0px;
+				height: 0px;
+				margin: 300px 0px;
+				border: 50px solid transparent;
+/* 				border-left: 30px solid pink; */
+			}
+			.turnleft{
+				border-right: 30px solid gray;
+			}
+			.turnright{
+				border-left: 30px solid gray;
+			}
+			#fir{
+				margin: 40px auto;
+				width: 1200px;
+				height: 700px;
+				/* border: 1px solid black; */
+				/* float: left; */
+				/* overflow: hidden; */
+			}
+			#fir div{
+				float: left;
+			}
+			#img2{
+				width: 1000px;
+				height: 700px;
+			}
+			#sec{
+				width: 1200px;
+				font-size: 20px;
+				margin: 0 auto;
+				color: gray;
+			}
+			#thr{
+				width: 1200px;
+				margin: 20px auto;
+			}
+			#thr img{
+				margin-left: 30px;
+			}
+			#fou{
+				/* border: 2px solid black; */
+				width: 1200px;
+				margin: 50px auto;
+				text-align: center;
+			}
+			.item{
+				
+				width: 300px;
+				display: inline-block;
+				/* border: 2px solid red; */
+				margin-bottom: 35px;
+				background-color: yellow;
+				/* 截取边角 */
+				border-radius: 10px;
+				/* 超出部分隐藏 */
+				overflow: hidden;
+			
+			}
+			.item > p{
+				background-color: white;
+				height: 35px;
+				color: gray;
+				line-height: 35px;
+			}
+			.mlr{
+				margin-left: 45px;
+				margin-right: 45px;
+			}
+			.item > img{
+				/* 百分比布局:相对于宽高百分比 */
+				width: 100%;
+				/* 去除图片底部或者顶部间隙 vertical-align: top;vertical-align: bottom; */
+				vertical-align: bottom;
+			}
+			#down{
+				height: 150px;
+				background-color: gray;
+				/* float: left; */
+			}
+			#downleft{
+				width: 1000px;
+				height: 150px;
+				/* border: 2px solid red; */
+				border-right: 2px solid lightgray;
+				overflow: hidden;
+				float: left;
+			}
+			#downleft img{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				margin-right: 20px;
+				overflow: hidden;
+				float: right;
+			}
+			#downright{
+				width: 800px;
+				color: lightgrey;
+				/* border: 2px solid blue; */
+				font-size: 4px;
+				float: left;
+			}
+			#downright img{
+				width: 80px;
+				height: 30px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<div id="img">
+				<img src="img/10.png" alt="">
+			</div>
+			<div id="intop">
+				<a href="###" class="A">HOME</a>
+				<a href="###" class="A">WORK</a>
+				<a href="###" class="A">CONTANT</a>
+				<a href="###" class="A">JOIN US</a>
+			</div>
+		</div>
+		<div id="wrap">
+			<div id="fir">
+				<!-- <div class="turnleft"></div>
+				<img id="img2" src="img/1.jpg" alt="" >
+				<div class="turnright"></div> -->
+				<div>
+					<div class="turnleft"></div>
+				</div>
+				<div>
+					<img id="img2" src="img/1.jpg" alt="" >
+				</div>
+				<div>
+					<div class="turnright"></div>
+				</div>
+			</div>
+			<div id="sec">
+				<hr >
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INFINI （映纷创意）是一家独立创新营销公司，致力于创造会流动的美好创意。我们从策略与洞察出发，不断探索营销和创意的多元表达，用创作精神为品牌提供更具生命力的跨媒体整合营销服务。</p>
+				<br>
+				<hr >
+			</div>
+			<div id="thr">
+				<img src="img/logo1.jpg" alt="">
+				<img src="img/logo2.jpg" alt="">
+				<img src="img/logo3.jpg" alt="">
+				<img src="img/logo4.jpg" alt="">
+				<img src="img/logo5.jpg" alt="">
+				<img src="img/logo6.jpg" alt="">
+				<img src="img/logo7.jpg" alt="">
+				<img src="img/logo8.jpg" alt="">
+			</div>
+			<div id="fou">
+				<div class="item">
+					<img src="img/2.jpg" alt="">
+					<p>小米MIUI for Watch</p>
+				</div>
+				<div class="item mlr">
+					<img src="img/3.jpg" alt="">
+					<p>小米MIUI for Watch</p>
+				</div>
+				<div class="item">
+					<img src="img/4.jpg" alt="">
+					<p>小米MIUI for Watch</p>
+				</div>
+				<div class="item">
+					<img src="img/5.jpg" alt="">
+					<p>小米MIUI for Watch</p>
+				</div>
+				<div class="item mlr">
+					<img src="img/6.jpg" alt="">
+					<p>小米MIUI for Watch</p>
+				</div>
+				<div class="item">
+					<img src="img/7.jpg" alt="">
+					<p>小米MIUI for Watch</p>
+				</div>
+			</div>
+		</div>
+		<div id="down">
+			<div id="downleft">
+				<img src="img/logo1.jpg" alt="">
+				<img src="img/logo2.jpg" alt="">
+				<img src="img/logo3.jpg" alt="">
+			</div>
+			<div id="downright">
+				<img src="./img/10.png" alt="" >
+				<p>INFINI | 映纷创意</p>
+				<p>北京市朝阳区懋隆创意园</p>
+				<p>TEL : 010-85394331</p>
+				<p>QQ : 7585917</p>
+				<p>Email : infinistudio@foxmail.com</p>
+				<p>weibo : @InfiniStudio</p>
+			</div>
+		</div>
+	</body>
+</html>

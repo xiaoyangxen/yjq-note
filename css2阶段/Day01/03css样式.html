@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- css头部引入方式 -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 头部引入 -->
+		<style type="text/css">
+			/*css选择器 *通配选择器 为以下body中的所有标签设置样式*/
+			*{
+				color: red;
+			}
+			/*id选择器 唯一的  #id名*/
+			#name1{
+				background-color: aqua;
+				width: 300px;
+				height: 80px;
+				/* 边框: 边框宽度，边框类型solid实线/dashed虚线/dotted点状虚线，边框的颜色*/
+				border: 5px solid black;
+				/* 内容的对齐方式:默认是left向左靠齐*/
+				text-align: center;
+				font-size: 50px;
+				/* 加粗 */
+				font-weight: bold;
+				color: yellow;
+			}
+			#two{
+				color: green;
+				/* 添加下划线
+				 underline 下划线 
+				 overline 上面添加 
+				line-through 删除线（线在字中间）
+				 none 不添加*/
+				text-decoration: underline;
+			}
+			/* css选择器的优先级:选择器选择的范围越广,优先级越低 */
+			/* class 选择器 为多个标签设置相同样式
+			.class */
+			.one{
+				font-size: 80px;
+				color: purple;
+			}
+			/* 删除掉超链接的下划线 */
+			#baidu{
+				text-decoration: none;
+			}
+			#img{
+				width: 300px;
+			}
+			#div1{
+				width: 500px;
+				border: 2px solid black;
+				/* 让标签内容居中 */
+				text-align: center;
+				/* 标签相对于父级左右居中 */
+				/* margin外边距，上下间距为30px,左右居中 */
+				margin: 30px auto;
+			}
+			#wrap{
+				border: 2px solid green;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <br>手动换行 -->
+		<p id="name1">123</p>
+		<hr>
+		<!-- 水平分割线换行 -->
+		<p id="two" class="one">321</p>
+		<!-- ### 无效链接 -->
+		<a  id="baidu" href="###">百度</a>
+		<h1 class="one">hello world!</h1>
+		<!-- span无语义标签，设置内容的 -->
+		<!-- div 无语义标签，是用来做网页布局的； -->
+		<div id="wrap">
+			<div id="div1">
+				<img id="img"  src="1.jpg" >
+				<p>这是一张图！</p>
+				<!-- <span>这是一张图！</span> -->
+			</div>
+		</div>
+		<!-- 输入框 type=text-->
+		<input type="text" name="" id="" value="" />
+		<!-- 密文输入框 type=password -->
+		<input type="password" name="" id="" value="" />
+		<!-- 按钮 -->
+		<button type="button">确定</button>
+		<!-- 或者 -->
+		<input type="button" name="" id="" value="删除" />
+	</body>
+</html>

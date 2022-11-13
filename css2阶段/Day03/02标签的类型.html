@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#one{
+				border: 3px solid black;
+				width: 300px;
+				/* font-size: 50px; */
+				height: 100px;
+			}
+			#baidu{
+				background-color: red;
+			}
+			#name{
+				background-color: #FFFF00;
+				display: block;
+			}
+			#name3{
+				display: inline;
+			}
+			#wrap{
+				border: 2px solid black;
+				width: 1200px;
+			}
+			/* 群组选择器 选择器,选择器,选择器  同时为所有选择器对应的标签设置样式 */
+			.A,.B,.C{
+				width: 300PX;
+				height: 150px;
+				/* background-color: red; */
+				font-size: 50px;
+				color: white;
+				text-align: center;
+				inline-size: 150px;
+				/* 行内块级元素 */
+				display: inline-block;
+				margin-left: 73px;
+				margin-bottom: 50px;
+			}
+			.A{
+				background-color: red;
+			}
+			.B{
+				background-color: blue;
+			}
+			.C{
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">
+			<span id="name" >123333</span>
+			<a id="###" >搜狗</a>
+		</div>
+		<a id="baidu" href="###">百度</a>
+		<span>1111</span>
+		<!-- a{keji}*20 -->
+		<p id="name3" >p标签换行，作为块标签，需要独占一行</p>
+		<div id="wrap">
+			<div class="A">A</div>
+			<div class="B">B</div>
+			<div class="C">C</div>
+			<div class="A">A</div>
+			<div class="B">B</div>
+			<div class="C">C</div>
+			<div class="A">A</div>
+			<div class="B">B</div>
+			<div class="C">C</div>
+		</div>
+		<!-- 标签的属性分类：（块属性标签和行属性标签）
+		1.块属性标签的特点：
+		*块属性标签默认宽度相对于父级标签100%；
+		*块属性标签独占父级一行；
+		*块属性标签可以设置宽高；
+		*块属性标签默认高度由内容撑开；
+		*块属性标签可以设置上下margin;
+		*块属性标签可以嵌套块属性和行属性标签；
+		总结：块属性标签有：div,h1~h6,p,ul,ol,li,hr,br...
+		2.行属性标签的特点：
+		*行属性标签可以同行显示；（相对于父级标签）
+		*行属性标签宽高由内容撑开；
+		*行属性标签不可以设置宽高（img,input除外）；
+		*行属性只能嵌套行属性标签；
+		总结：属于行属性标签的有：a,img,input,span,strong,em.
+		特殊标签：
+		*p标签不能嵌套块元素；
+		*a标签不能嵌套a标签； -->
+		
+		<!-- 块，行元素之间的转换
+		1.display:block;转化为块元素；
+		2.display:inline;转化为行元素；
+		3.dispaly:inline-block 行内块级元素，既可以同行显示，又可以设置宽高-->
+	</body>
+</html>

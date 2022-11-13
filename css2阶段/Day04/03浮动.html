@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.div1{
+				width: 300px;
+				height: 70px;
+				background-color: red;
+				color: white;
+				font-size: 20px;
+				/* float: left; */
+			}
+			.div2{
+				width: 400px;
+				height: 90px;
+				background-color: blue;
+				color: white;
+				font-size: 20px;
+				/* float: right; */
+			}
+			.div3{
+				width: 500px;
+				height: 110px;
+				background-color: yellow;
+				color: white;
+				font-size: 20px;
+				/* float: left; */
+			}
+			.div4{
+				width: 600px;
+				height: 130px;
+				background-color: green;
+				color: white;
+				font-size: 20px;
+				/* float: left; */
+			}
+			.div5{
+				width: 700px;
+				height: 150px;
+				background-color: pink;
+				color: white;
+				/* font-size: 20px; */
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- 一个标签元素，默认不设置的情况下，都在文档流（标准流）中显示；
+		如果设置成浮动元素，则该标签在浮动层中（会脱离文档流），和文档
+		流不在同一个层级； -->
+		<!-- 浮动元素：float
+		1.float:left;相对于父级元素向左靠齐；
+		2.float:right;相对于父级元素向右靠齐；
+		如何判断一个浮动元素的位置：
+		1.如果一个浮动元素的上一个兄弟元素是文档流元素，则该浮动元素向上一个兄弟元素底部靠齐；
+		2.如果一个浮动元素的上一个兄弟元素也是浮动元素，则该浮动元素与上一个兄弟元素统计，都在浮动层；
+		注意：浮动元素能够同行显示，只是在相对父级剩余空间不足的情况下，才会自动换行； -->
+		
+		<div class="div1">1</div>
+		<div class="div2">2</div>
+		<div class="div3">3</div>
+		<div class="div4">4</div>
+		<div class="div5">5</div>
+	</body>
+</html>

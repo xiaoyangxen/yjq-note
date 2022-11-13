@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#wrap{
+				width: 500px;
+				margin: 50px auto;
+				/* border: 2px solid black; */
+			}
+			#top{
+				/* width: 500px;
+				border: 1px solid blue; */
+				overflow: hidden;
+			}
+			/* 公有样式 */
+			#wrap div{
+				font-size: 40px;
+				text-align: center;
+				color: white;
+			}
+			#top > div{
+				background-color: green;
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				float: left;
+			}
+			#center{
+				/* border: 1px solid blue; */
+				overflow: hidden;
+			}
+			#left{
+				width: 300px;
+				float: left;
+			}
+			#right{
+				width: 200px;
+				float: right;
+			}
+			.div6{
+				height: 100px;
+				background-color: yellow;
+				line-height: 100px;
+			}
+			.div8,.div9{
+				background-color: gray;
+				width: 150px;
+				height: 150px;
+				line-height: 150px;
+				float: left;
+			}
+			.div89{
+				overflow: hidden;
+			}
+			.div9{
+				background-color: black
+			}
+			.div11{
+				background-color: red;
+				height: 100px;
+				line-height: 100px;
+			}
+			.div7{
+				height: 200px;
+				background-color: pink;
+				line-height: 200px;
+			}
+			.div10{
+				height: 150px;
+				background-color: blue;
+				line-height: 150px;
+			}
+			.div12{
+				background-color: purple;
+				height: 100px;
+				line-height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="top">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+			</div>
+			<!-- 中间的6,7，8,9,10,11部分 -->
+			<div id="center">
+				<!-- 6,8,9,11部分 -->
+				<div id="left">
+					<div class="div6">6</div>
+					<div class="div89">
+						<div class="div8">8</div>
+						<div class="div9">9</div>
+					</div>
+					<div class="div11">11</div>
+				</div>
+				<!-- 7,10部分 -->
+				<div id="right">
+					<div class="div7">7</div>
+					<div class="div10">10</div>
+				</div>
+			</div>
+			<div class="div12">12</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 方式三:外部引入 -->
+		<link rel="stylesheet" type="text/css" href="css/one.css"/>
+		<!-- 方式二：头部引用 -->
+		<style type="text/css">
+			#one{
+				border: 3px solid black;
+				color: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- 方式一：标签内引入,优先级最高-->
+		<p id="one" style="color: red;font-size: 50px;">123</p>
+		<p class="two">321</p>
+	</body>
+	<!-- 总结：
+	css的引入方式：
+	1.标签内引入：
+	*只能为该标签设置样式;
+	*优先级高；
+	*代码冗余，不利于后期代码维护；
+	*一般结合js使用；
+	*不利于复用代码；
+	2.头部引入：
+	*请求速度快；
+	*相对于标签内引入，支持该页面标签复用样式；
+	*代码不利于多个页面复用代码；
+	使用场景：高访问量的页面，例如，网站首页，广告页，推广页，活动页；
+	3.外部引入方式：
+	*方便后期代码维护以及版本的更新迭代；
+	*方便多个页面复用公用代码；
+	*缺点：多次使用外部引入，会造成服务器压力；
+	使用场景：整个网站，访问量不高的页面；
+	css引入方式的优先级：标签内>头部>外部 -->
+	
+</html>

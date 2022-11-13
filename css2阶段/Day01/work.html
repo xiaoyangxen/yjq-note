@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#wrap{
+				border: 2px solid green;
+				background-color: lightgray;
+			}
+			#D{
+				width: 800px;
+				/* border: 2px solid black; */
+				text-align: left;
+				margin: 200px auto;
+				background-color: white;
+				padding: 20px;
+			}
+			#button2{
+				margin-bottom: 20px;
+			}
+			#p1{
+				font-size: 20px;
+				font-weight: bold;
+			}
+			#text{
+				height: 50px;
+				border: 1px dashed gray;
+				background-color: rgb(245,245,245);
+				text-indent: 2em;
+				/* 首行留两个字符缩进 */
+				line-height: 50px;
+				/* 行高设置为50px */
+			}
+			.line{
+				height: 1px;
+				background-color: gray;
+			}
+			#SP{
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- div#warp  tab -->
+		<div id="wrap">
+			<div id="D">
+				<h1>XHTML语法</h1>
+				<input type="button" id="button1" value="<-上一节" />
+				&nbsp;&nbsp;
+				<input type="button" id="button2" value="下一节->" />
+				<br>
+				<!-- <hr > -->
+				<!-- div.line tab -->
+				<div class="line">
+					
+				</div>
+				<p id="p1">编写XHTML代码需要纯净的HTML语法</p>
+				<hr >
+				<h3>更多的XHTML语法规则:</h3>
+				<ul>
+					<li>属性名称必须小写</li>
+					<li>属性值必须加引号</li>
+					<li>属性不能简写</li>
+					<li>用Id属性替代name属性</li>
+					<li>XHTML DTD定义了强制使用的HTML元素</li>
+				</ul>
+				<br>
+				<hr >
+				<h3>属性名称必须小写</h3>
+				<p>这是错误的：</p>
+				<!-- <div id="tab">
+					<p>&lt;table width="100%"&gt;</p>
+				</div> -->
+				<div id="text">
+					&lt;table<span id="SP">WIDTH</span>="100%"&gt;
+				</div>
+			</div>
+			
+		</div>
+
+	</body>
+</html>

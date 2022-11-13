@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>INFINI|映纷创意</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#wrap{
+				border: 2px solid black;
+				width: 1100px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			body{
+				background-color: lightgray;
+			}
+			.item{
+				
+				width: 300px;
+				display: inline-block;
+				/* border: 2px solid red; */
+				margin-bottom: 35px;
+				background-color: yellow;
+				/* 截取边角 */
+				border-radius: 10px;
+				/* 超出部分隐藏 */
+				overflow: hidden;
+
+			}
+			.item > p{
+				background-color: white;
+				height: 35px;
+				color: gray;
+				line-height: 35px;
+			}
+			.mlr{
+				margin-left: 45px;
+				margin-right: 45px;
+			}
+			/* 标签名选择器,为该标签名设置样式 */
+			p{
+				
+			}
+			/* 子代选择器 选择器1 > 选择器2 为选择器1对应的标签
+			的子代选择器2对应的标签设置样式 */
+			.item > img{
+				/* 百分比布局:相对于宽高百分比 */
+				width: 100%;
+				/* 去除图片底部或者顶部间隙 vertical-align: top;vertical-align: bottom; */
+				vertical-align: bottom;
+			}
+			/* 后代选择器 选择器 空格 选择器2 */
+			/* .item img{
+				border: 2px solid red;
+			} */
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<!-- <a href="" ><img src="img/1%20(2).jpg" title="" ></a> -->
+<!-- 			<div class="item">
+				<img src="img/1%20(2).jpg" title="a图片" ><p >a文案</p> -->
+				<!-- </div> -->
+				<a href="http://www.infinistudio.cn/work/101.html"><div class="item">
+				<img src="img/1.jpg" title="a图片" ><p >a文案</p></div></a>
+			
+
+			<!-- 子级>    兄弟+ -->
+			<!-- (div.item>img[src=img/$.jpg alt=""]+p{})*6 -->
+			<!-- <div class="item mlr"> -->
+				<a href="http://www.infinistudio.cn/work/100.html">
+					<div class="item mlr"><img src="img/2.jpg" title="b图片" >
+					<p >b文案</p>
+				
+			</div></a>
+				<!-- <img src="img/2.jpg" title="b图片" ><p >b文案</p>
+				
+			</div> -->
+			<!-- 如果同一个标签设置多个class名 -->
+			<div class="item">
+				<!-- <a href="http://www.infinistudio.cn/work/98.html"></a> -->
+				<img src="img/3.jpg" title="c图片" ><p >c文案</p>
+				
+			</div>
+			<div class="item">
+				<!-- <a href="http://www.infinistudio.cn/work/97.html"></a> -->
+				<img src="img/4.jpg" title="d图片" ><p  >d文案</p>
+				
+			</div>
+			<div class="item mlr">
+				<!-- <a href="http://www.infinistudio.cn/work/96.html"></a> -->
+				<img src="img/5.jpg" title="e图片" ><p >e文案</p>
+				
+			</div>
+			<div class="item">
+				<!-- <a href="http://www.infinistudio.cn/work/95.html"></a> -->
+				<img src="img/6.jpg" title="f图片" ><p >f文案</p>
+				
+			</div>
+		</div>
+		
+		
+		<div id="two">
+			two
+		</div>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#tab{
+				width: 700px;
+				height: 300px;
+			}
+			#tab td{
+				text-align: center;
+				font-size: 20px;
+				color: aqua;
+			}#tab1{
+				width: 900px;
+				height: 300px;
+			}
+			#tab1 td{
+				text-align: center;
+				font-size: 30px;
+			}
+			#imgtd{
+				width: 50px;
+			}
+			#imgtd img{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- table 表格
+		tr 行
+		td 单元格
+		th 表头单元格 -->
+		<!-- 设置一个五行四列的表格 -->
+		<!-- table#tab>(tr>td{单元格$}*4)*5 -->
+		<!-- cellspacing 单元格之间的间距
+		     cellpadding 单元格的内边距
+		 -->
+		<table id="tab" border="1" cellspacing="0" cellpadding="5">
+			<tr >
+				<th rowspan="2">1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>单元格1</td>
+				<td>单元格2</td>
+				<td>单元格3</td>
+				<td>单元格4</td>
+			</tr>
+			<tr>
+				<td>单元格1</td>
+				<td>单元格2</td>
+				<td>单元格3</td>
+				<td>单元格4</td>
+			</tr>
+			<tr>
+				<td>单元格1</td>
+				<td>单元格2</td>
+				<td>单元格3</td>
+				<td>单元格4</td>
+			</tr>
+			<tr>
+				<td>单元格1</td>
+				<td>单元格2</td>
+				<td>单元格3</td>
+				<td>单元格4</td>
+			</tr>
+			<tr>
+				<td>单元格1</td>
+				<td>单元格2</td>
+				<td>单元格3</td>
+				<td>单元格4</td>
+			</tr>
+		</table>
+
+		<hr >
+		<!-- 设置一个6*8的表格 -->
+		<!-- table#tab1[border=1 cellspacing=0]>(tr>td{$}*8)*6 -->
+		<table id="tab1" border="1" cellspacing="0">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td colspan="2" rowspan="4">
+					<img id="imgtd" src="img/2.jpg" alt="">
+				</td>
+				<!-- <td>8</td> -->
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<!-- colspan列合并 -->
+				<td colspan="2">99kg</td>
+				<td>4</td>
+				<td>5</td>
+				<!-- <td>6</td>
+				<td>7</td> -->
+				<!-- <td>8</td> -->
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<!-- rowspan 行合并 -->
+				<td rowspan="2">100kg</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<!-- <td>7</td>
+				<td>8</td> -->
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td colspan="2" rowspan="2">克</td>
+				<td>4</td>
+				<!-- <td>5</td>
+				<td>6</td> -->
+				<!-- <td>7</td> -->
+				<!-- <td>8</td> -->
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<!-- <td>7</td>
+				<td>8</td> -->
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#A{
+				width: 300px;
+				height: 300px;
+				background-color: red;
+				font-size: 50px;
+				color: white;
+				text-align: center;
+				line-height: 300px;
+				border: 5px solid blue;
+				/* 1.padding:内填充 */
+				/* 单独设置 */
+				padding-left: 50px;
+				padding-right: 20px;
+				padding-top: 30px;
+				padding-bottom: 90px;
+				/* 2.padding  一个值 代表上下左右 */
+				padding: 20px;
+				/*3. padding: 两个值   上下  左右; */
+				/* padding: 30px 60px; */
+				/* 4.padding: 三个值  上 左右  下 */
+				/* 5.padding: 四个值  上,右,下,左 */
+				/* margin: 外边距  使用方式和padding一致 */
+				margin-left: 90px;
+				margin-top: 50px;
+				margin: 100px auto;
+				border-left: 50px solid green;
+				border-top: 100px solid yellow;
+				border-right: 60px dotted pink;
+				border-bottom: 50px dashed purple;
+			}
+
+			#B,#C{
+					width: 300px;
+					height: 300px;
+					font-size: 50px;
+					color: white;
+					text-align: center;
+					line-height: 300px;
+					display: inline-block;
+				}
+				#B{
+					background-color: blue;
+					/* margin-bottom:90px ; */
+					margin-right: 50px;
+				}
+				#C{
+					background-color: yellow;
+					/* margin-top: 50px; */
+					margin-left: 60px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="A">A</div>
+		<div id="B">B</div>
+		<div id="C">C</div>
+	<!-- 	总结：
+		1.盒模型的组成：
+		content(width,height) + padding +border+margin
+		标签的实际宽度 = content.width + padding-left + padding-riht + border-left + border-right
+		标签的实际高度 = content.height + padding-bottom + padding-top + border-button + border-top
+		*padding  盒内边距，相当于填充物
+		*border  盒的边框；
+		*margin  盒子的外边距，用来设置标签之间的间距大小；
+		注意：如果标签之间横向布局，当同时设置左右外边距时候，标签之间的间距叠加；
+			如果标签之间纵向布局，当同时设置上下外边距时，标签之间的间距取两者较大值； -->
+	</body>
+	<script type="text/javascript">
+		var num = 0;
+		outPoint:
+		for (var i = 0 ; i < 10 ; i++){
+		  for (var j = 0 ; j < 10 ; j++){
+		    if( i == 5 && j == 5 ){
+		      break outPoint; // 在 i = 5，j = 5 时，跳出所有循环，
+		                      // 返回到整个 outPoint 下方，继续执行
+		    }
+		    num++;
+		  }
+		}
+		
+		alert(num); // 输出 55
+	</script>
+</html>

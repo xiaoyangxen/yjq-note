@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: lightgray;
+			}
+			#wrap{
+				/* border: 2px solid red; */
+				width: 90%;
+				margin: 50px auto;
+				overflow: hidden;
+				/* text-align: center; */
+			}
+			.item{
+				width: 30%;
+				border: 1px solid black;
+				float: left;
+				border-radius: 15px;
+				overflow: hidden;
+				margin-left: 2.5%;
+				margin-bottom: 30px;
+			}
+			.item > p{
+				background-color: white;
+				height: 40px;
+				font-size: 20px;
+				text-align: center;
+			}
+			.item > .top >img{
+				width: 100%;
+				vertical-align: top;
+			}
+			.top{
+				position: relative;
+			}
+			.top > .bg{
+				background-color: rgba(120,50,130,0.7);
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				transition: all 2s;
+			}
+			.item:hover > .top > .bg{
+				opacity: 1;
+			}
+			
+			.top > .bg > h2,.top > .bg > p{
+				color: white;
+				text-align: center;
+			}
+			.top > .bg > h2{
+				margin-top: 20%;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="item">
+				<div class="top">
+					<img src="img/2.jpg" alt="" >
+					<!-- 蒙版 -->
+					<div class="bg">
+						<h2>京东</h2>
+						<p>1234564789</p>
+					</div>
+				</div>
+				<p>京东818购物节</p>
+			</div>
+			<div class="item">
+				<div class="top">
+					<img src="img/2.jpg" alt="" >
+					<!-- 蒙版 -->
+					<div class="bg">
+						<h2>京东</h2>
+						<p>1234564789</p>
+					</div>
+				</div>
+				<p>京东818购物节</p>
+			</div>
+			<div class="item">
+				<div class="top">
+					<img src="img/2.jpg" alt="" >
+					<!-- 蒙版 -->
+					<div class="bg">
+						<h2>京东</h2>
+						<p>1234564789</p>
+					</div>
+				</div>
+				<p>京东818购物节</p>
+			</div>
+			<div class="item">
+				<div class="top">
+					<img src="img/2.jpg" alt="" >
+					<!-- 蒙版 -->
+					<div class="bg">
+						<h2>京东</h2>
+						<p>1234564789</p>
+					</div>
+				</div>
+				<p>京东818购物节</p>
+			</div>
+			<div class="item">
+				<div class="top">
+					<img src="img/2.jpg" alt="" >
+					<!-- 蒙版 -->
+					<div class="bg">
+						<h2>京东</h2>
+						<p>1234564789</p>
+					</div>
+				</div>
+				<p>京东818购物节</p>
+			</div>
+			<div class="item">
+				<div class="top">
+					<img src="img/2.jpg" alt="" >
+					<!-- 蒙版 -->
+					<div class="bg">
+						<h2>京东</h2>
+						<p>1234564789</p>
+					</div>
+				</div>
+				<p>京东818购物节</p>
+			</div>
+		</div>
+	</body>
+</html>

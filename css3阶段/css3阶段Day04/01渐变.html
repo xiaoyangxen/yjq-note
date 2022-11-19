@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#one{
+				width: 600px;
+				height: 300px;
+				font-size: 80px;
+				text-align: center;
+				line-height: 300px;
+				border: 2px solid black;
+				color: white;
+				margin: 50px auto;
+				/* 线性渐变 */
+				/* background-image: linear-gradient(to right,green,red,yellow,blue); */
+				/* background-image: linear-gradient(to bottom,green,red,yellow,blue); */
+				/* background-image: linear-gradient(to right,green 30%,red 50%,yellow 90%,blue); */
+				/* background-image: linear-gradient(to right top,green,red,yellow,blue); */
+				background-image: linear-gradient(90deg,green,red,yellow,blue);
+				/* 线性渐变:
+				linear-gradient(渐变的方向-终点的位置,颜色1,颜色2,颜色3...)
+				1.颜色一定要大于两种;
+				2.终点位置(to top,to right,to left,to bottom ,to left top...)
+				终点位置还可以是角度,12点钟的位置为0度,顺时针旋转角度为正方向;
+				3.可以使用百分比设置颜色渐变的范围大小,如果不设置,则平均分配; */
+				
+				text-shadow: 0px 0px 10px black,
+				0px 0px 20px purple;
+			}
+			#two{
+				width: 500px;
+				height: 500px;
+				border: 3px solid black;
+				margin: 50px auto;
+				/* 径向渐变 */
+				/* radial-gradiet(x轴的半径 y轴的半径 at 圆心位置x 圆心位置y,颜色1,颜色2....)  */
+				background-image: radial-gradient(50% 50% at center center,
+				yellow,red,green,pink);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 渐变：颜色逐渐变化的过程，从一种颜色过渡到另一种颜色的过程；
+		1.线性渐变
+		2.径向渐变 -->
+		<div id="one">
+			Beautiful girl
+		</div>
+		<div id="two">
+			
+		</div>
+	</body>
+</html>

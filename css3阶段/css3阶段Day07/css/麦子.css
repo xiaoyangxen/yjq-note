@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	background-image: url(../img/bc.png);
+	font-size: 20px;
+}
+#wrap{
+	width: 18.75rem;
+	height: 33.35rem;
+	position: relative;
+}
+#wrap > img{
+	width: 8.8rem;
+	position: absolute;
+	left: 5.775rem;
+	top: 8.825rem;
+}
+#wrap > #loading{
+	font-size: 1.201rem;
+	width: 7.65rem;
+	height: 0.7rem;
+	position: absolute;
+	left: 6.425rem;
+	top: 22.1rem;
+}
+
+@keyframes point{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.point{
+	opacity: 0;
+	-webkit-animation: point 1s linear infinite;
+	-o-animation: point 1s linear infinite;
+	animation: point 1s linear infinite;
+}
+#A{
+	width: 4rem;
+	height: 0.75rem;
+	font-size: 1.201rem;
+	position: absolute;
+	left: 8.4rem;
+	top: 23.4rem;
+}

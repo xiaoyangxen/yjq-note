@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#one{
+				width: 150px;
+				border: 1px solid black;
+				margin: 200px auto;
+				/* 倒影不占位,默认不兼容谷歌浏览器 */
+				/* box-reflect:倒影方向(above below left right) 倒影与该图形之间的间距 倒影的渐变 */
+				-webkit-box-reflect: below 30px linear-gradient(to top,blue,transparent );
+			}
+			#one img{
+				width: 100%;
+				vertical-align: top;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">
+			<img src="img/2.jpg" >
+		</div>
+	</body>
+</html>

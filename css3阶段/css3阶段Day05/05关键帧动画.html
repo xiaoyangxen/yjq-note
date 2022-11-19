@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/* 设置一个关键帧动画 */
+			@keyframes move1{
+				0%{
+					transform: translateX(0px);
+					border-radius: 0;
+					opacity: 1;
+					background-color: red;
+				}
+				50%{
+					transform: translateX(800px);
+					border-radius: 50%;
+					opacity: 1;
+					background-color: yellow;
+				}
+				100%{
+					transform: translateX(300px);
+					border-radius: 20%;
+					opacity: 1;
+					background-color: blue;
+				}
+			}
+			@keyframes move2{
+				0%{
+					transform: rotateZ(0deg);
+				}
+				100%{
+					transform: rotateZ(360deg);
+				}
+			}
+			#one{
+				width: 50px;
+				height: 50px;
+				color: white;
+				margin: 100px auto;
+				text-align: center;
+				line-height: 50px;
+				background-color: red;
+				/*1. 添加关键帧动画  兼容性 anin*/
+				/* animation-name: move1; */
+				-webkit-animation-name: move1;
+				-moz-animation-name: move1;
+				-o-animation-name: move1;
+				animation-name: move1;
+				/* 2.添加动画执行一次的时间 */
+				/* anidu */
+				/* duration 持续时间,期间 */
+				-webkit-animation-duration: 10s;
+				-moz-animation-duration: 10s;
+				-o-animation-duration: 10s;
+				animation-duration: 10s;
+				/* 3.动画执行的次数  infinite */
+				/* aniic */
+				-webkit-animation-iteration-count: 3;
+				-moz-animation-iteration-count: 3;
+				-o-animation-iteration-count: 3;
+				animation-iteration-count: 3;
+				/* 4.动画执行的效果
+				linear 匀速
+				ease 由快到慢
+				ease-in 由慢到快-加速
+				ease-out 由快到慢-减速
+				ease-in-out 先加速再减速 */
+				/* anitf */
+				-webkit-animation-timing-function: ease;
+				-moz-animation-timing-function: ease;
+				-o-animation-timing-function: ease;
+				animation-timing-function: ease;
+				/* 5.设置动画的延迟时间 */
+				/* anide */
+				-webkit-animation-delay: 0s;
+				-moz-animation-delay: 0s;
+				-o-animation-delay: 0s;
+				animation-delay: 0s;
+				/* 6.设置动画的播放方向 
+				默认方向为  normal
+				anidi
+				alternate 当动画的执行次数大于1时，支持反向播放（0%-20%-40%-....100%-80%-60%-....0%）
+				*/
+				-webkit-animation-direction: alternate;
+				-moz-animation-direction: alternate;
+				-o-animation-direction: alternate;
+				animation-direction: alternate;
+				/* 7.标签执行动画完毕之后的状态 
+				backwards动画执行完毕之后，所在元素回到初始位置；
+				forwards动画执行完毕之后，所在元素停留在动画结束位置；
+				*/
+				/* anifm */
+				-webkit-animation-fill-mode: forwards;
+				-moz-animation-fill-mode: forwards;
+				-o-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				/* 总写:动画名称 动画时长 动画过渡效果 延迟时间 */
+				/* ani */
+				/* -webkit-animation: move1 3s ease 2s;
+				-o-animation: move1 3s ease 2s;
+				animation: move1 3s ease 2s; */
+			}
+			#two{
+				width: 50px;
+				height: 50px;
+				color: white;
+				margin: 100px auto;
+				text-align: center;
+				line-height: 50px;
+				background-color: red;
+				-webkit-animation-name: move2;
+				-moz-animation-name: move2;
+				-o-animation-name: move2;
+				animation-name: move2;
+				/* 添加动画执行一次的时间 */
+				/* anidu */
+				/* duration 持续时间,期间 */
+				-webkit-animation-duration: 10s;
+				-moz-animation-duration: 10s;
+				-o-animation-duration: 10s;
+				animation-duration: 10s;
+				/* 动画执行的次数  infinite */
+				/* aniic */
+				-webkit-animation-iteration-count: 3;
+				-moz-animation-iteration-count: 3;
+				-o-animation-iteration-count: 3;
+				animation-iteration-count: 3;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">one</div>
+		<div id="two">
+			two
+		</div>
+	</body>
+</html>

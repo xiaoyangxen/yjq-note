@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.ul1{
+				list-style-type: none;
+			}
+			.ul1 li{
+				background-color: yellow;
+			}
+			/* A:before 在A选择器对应的标签之前添加内容
+			A:after 在A选择器对应的标签之后添加内容 */
+			.ul1 li:before{
+				content: 'niu';
+				background-color: pink;
+				width: 60px;
+				height: 30px;
+				display: inline-block;
+			}
+			.ul1 li:after{
+				content: '我笑了';
+				background-color: gray;
+			}
+			#wrap{
+				width: 600px;
+				border: 3px solid black;
+				margin: 50px auto;
+				/* overflow: hidden; */
+			}
+			#one{
+				width: 200px;
+				height: 300px;
+				background-color: red;
+				float: left;
+			}
+			#two{
+				width: 300px;
+				height: 400px;
+				background-color: yellow;
+				float: right;
+			}
+			/* .clear{
+				clear:both;
+			} */
+			/* 给浮动元素父级添加样式,清除浮动造成的影响 */
+			#wrap:after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="ul1">
+			<li>NBA1</li>
+			<li>NBA2</li>
+			<li>NBA3</li>
+			<li>NBA4</li>
+			<li>NBA5</li>
+			<li>NBA6</li>
+			<li>NBA7</li>
+			<li>NBA8</li>
+			<li>NBA9</li>
+			<li>NBA10</li>
+		</ul>
+		<div id="wrap">
+			<div id="one"></div>
+			<div id="two"></div>
+			<!-- <div class="clear"></div> -->
+		</div>
+	</body>
+</html>

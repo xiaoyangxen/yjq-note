@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#A{
+				width: 300px;
+				height: 300px;
+				background-color: red;
+				margin: 50px auto;
+				/* border: 10px solid black;
+				border-width: 10px; */
+				/* border-top-left-radius: ; */
+				border-radius: 50px 0px 50px 50px / 100px 0px 100px 100px;
+				
+			}
+			#B{
+				width: 200px;
+				height: 200px;
+				background-color: gray;
+				margin: 50px auto;
+				/* 一个值:代表截取八个边角值相同 */
+				border-radius: 50px;
+			}
+			#C{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				margin: 50px auto;
+				/* 两个值:代表点四个值，后四个值 */
+				border-radius: 50px / 100px;
+			}
+			#D{
+				width: 200px;
+				height: 200px;
+				background-color: green;
+				margin: 50px auto;
+				/* 四个值:15,26,37,48 */
+				border-radius: 100px 50px 0px 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="A"></div>
+		<div id="B"></div>
+		<div id="C"></div>
+		<div id="D"></div>
+	</body>
+</html>

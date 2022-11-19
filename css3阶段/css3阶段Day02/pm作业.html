@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body,html{
+				font-size: 20px;
+			}
+			#wrap{
+				width: 18.8rem;
+				height: 33.4rem;
+/* 				background-color: rgba();
+ */				/* margin: 0 auto; */
+				/* border: 2px solid red; */
+			}
+			#nav{
+				width: 18.8 rem;
+				height: 2.1rem;
+				background-color: #48382b;
+				position: relative;
+				left: 0;
+				top: 1rem;
+				/* float: left; */
+			}
+			#nav > p{
+				font-size: 0.9rem;
+				color: #f1f1f1;
+				/* float: left;
+				margin-top: 1rem;
+				margin-left: 2rem; */
+				position: absolute;
+				left: 0.8rem;
+				top: 0.6rem;
+			}
+			#search{
+				position: absolute;
+				left: 4.4rem;
+				top: 0.4rem;
+			}
+			#nav > #search{
+				width: 11rem;
+				height: 1.3rem;
+				background-color: #403228;
+				border-radius: 0.4rem;
+				/* float: left; */
+			}
+			#nav > #search > img{
+				width: 0.9rem;
+				height: 0.9rem;
+				float: left;
+				margin-top: 0.2rem;
+				margin-left: 0.3rem;
+			}
+			#nav > #search > input{
+				font-size: 0.6rem;
+				width: 3.8rem;
+				height: 0.5rem;
+				color: #99886b;
+				
+				margin-top: 0.4rem;
+				margin-left: 0.3rem;
+				background-color: #403228;
+				border: none;
+			}
+			#nav > #A > img{
+				width: 0.8rem;
+				height: 1.1rem;
+				position: absolute;
+				right: 0.8rem;
+				bottom: 0.5rem;
+			}
+			#banner_bg{
+				width: 18.8rem;
+				height: 8.8rem;
+				position: relative;
+				top: 1rem;
+				background-color: white;
+				
+			}
+			#banner_bg > img{
+				width: 100%;
+				vertical-align: bottom;
+			}
+			#banner_bg > p{
+				width: 9.2rem;
+				height: 1rem;
+				font-size: 1rem;
+				font-weight: bold;
+				font-stretch: normal;
+				color: #ffffff;
+				position: absolute;
+				left: 4.8rem;
+				top: 3.2rem;
+			}
+			#button{
+				font-size: 0.5rem;
+				color: #ffffff;
+				font-weight: bold;
+				width: 4rem;
+				height: 0.9rem;
+				border-radius: 0.3rem;
+				border: 0.01rem solid #ffffff;
+				position: absolute;
+				left: 7.4rem;
+				top: 4.8rem;
+			}
+			#bg{
+				width: 18.7rem;
+				height: 9.7rem;
+				background-color: white;
+				position: relative;
+				left: 0;
+				top: 1rem;
+			}
+			#bg > p{
+				font-size: 0.7rem;
+				color: #6ab439;
+				position: absolute;
+				left: 0.8rem;
+				top: 0.8rem;
+			}
+			.word1{
+				width: 8.4rem;
+				font-size: 0.6rem;
+				color: #999999;
+				float: left;
+			}
+			.word2{
+				
+				font-size: 0.8rem;
+				color: #ff0000;
+				float: right;
+			}
+			/* .time{
+				width: 1rem;
+				height: 1.1rem;
+				background-color: #292929;
+				border-radius: 0.2rem;
+				font-size: 0.7rem;
+				text-align: center;
+				line-height: 1.1rem;
+				color: white;
+			} */
+			/* #bg > #down > #left > div,#bg > #down > #right > div{
+				width: 8.4rem;
+				height: 5rem;
+			}
+			#bg > #down > #left > div > img,#bg > #down > #left > div > img{
+				width: 100%;
+			} */
+			.img{
+				width: 8.4rem;
+				height: 5rem;
+			}
+			.img > img{
+				width: 100%;
+			}
+			.time{
+				width: 1rem;
+				height: 1.1rem;
+				background-color: #292929;
+				border-radius: 0.2rem;
+				font-size: 0.7rem;
+				text-align: center;
+				line-height: 1.1rem;
+				color: white;
+				float: left;
+			}
+			#down{
+				width: 17.3rem;
+				position: absolute;
+				left: 0.8rem;
+				top: 1.9rem;
+				float: left;
+			}
+			#left{
+				width: 8.4rem;
+				float: left;
+			}
+			#right{
+				width: 8.4rem;
+				float: right;
+			}
+			#wrap > #fixed{
+				width: 2.5rem;
+				height: 2.5rem;
+				position: fixed;
+				
+				top: 24.5rem;
+				left: 16.1rem;
+			}
+			#fixed > img{
+				width: 100%;
+			}
+			#tittle_bg{
+				width: 18.8rem;
+				height: 1.8rem;
+				position: relative;
+				left: 0;
+				top: 9rem;
+			}
+			#titleleft{
+				width: 2.6rem;
+				height: 0.6rem;
+				font-size: 0.6rem;
+				line-height: 1rem;
+				color: #6ab439;
+				margin-top: 0.7rem;
+				margin-left: 0.8rem;
+				float: left;
+			}
+			#titleright{
+				width: 2.4rem;
+				height: 0.6rem;
+				font-size: 0.6rem;
+				color: #999999;
+				margin-top: 0.8rem;
+				margin-right: 0.8rem;
+				float: right;
+			}
+			
+			#downdown{
+				width: 18.8rem;
+				height: 10rem;
+				position: relative;
+				left: 0;
+				top: 10rem;
+			}
+			#downdown > img{
+				width: 100%;
+			}
+			footer{
+				width: 18.8rem;
+				position: relative;
+				left: 0;
+				top: 6.5rem;
+				background-color: #48382b;
+			}
+			footer > img{
+				margin-left:1.5rem ;
+			}
+			@media screen and (min-width:414px) {
+				body,html{
+					font-size: 22.8px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="fixed">
+				<img src="img/fixed.png" >
+			</div>
+			<!-- <header class="mui-bar mui-bar-nav">
+				<h1 class="mui-title">标题</h1>
+			</header> -->
+			<nav id="nav">
+				<p>北京</p>
+				<div id="search">
+					<img src="img/nav1.png" >
+					<input type="text" placeholder="搜索食材,菜品" />
+				</div>
+				<div id="A">
+					<img src="img/nav2.png" >
+				</div>
+			</nav>
+			<div id="banner_bg">
+				<img src="img/banner1.png" alt="" >
+				<p>吃三文鱼的正确姿势</p>
+				<div id="button">早餐来点啥????</div>
+			</div>
+			<div id="bg">
+				<p>免抢购</p>
+				<div id="down">
+					<div id="left">
+						<p class="word1">精选延庆生态胡萝卜600g</p>
+						<div class="time">01</div>
+						<div class="time">36</div>
+						<div class="time">56</div>
+						<p class="word2">￥4.20</p>
+						<div class="img">
+							<img src="img/bg1.png" alt="">
+						</div>
+					</div>
+					<div id="right">
+						<p class="word1">精选延庆生态黄瓜500g</p>
+						<div class="time">01</div>
+						<div class="time">45</div>
+						<div class="time">20</div>
+						<p class="word2">￥9.90</p>
+						<div class="img">
+							<img src="img/bg2.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="tittle_bg">
+					<div id="titleleft">
+						<p>菜品精选</p>
+					</div>
+					<div id="titleright">
+						<p>查看更多</p>
+					</div>
+				</div>
+				<div id="downdown">
+					<img src="img/down.png" >
+				</div>
+				<footer>
+					<img src="img/foot1.png" alt="" >
+					<img src="img/foot1.png" alt="" >
+					<img src="img/foot1.png" alt="" >
+					<img src="img/foot1.png" alt="" >
+					<img src="img/foot1.png" alt="" >
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

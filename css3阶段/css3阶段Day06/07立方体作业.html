@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-image: url(img/22.jpg);
+				/* background-repeat: no-repeat; */
+				perspective: 1000px;
+			}
+			#wrap{
+				width: 1000px;
+				height: 800px;
+				/* border: 2px solid red; */
+				margin: 200px auto;
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+			}
+			#all{
+				width: 300px;
+				height: 300px;
+				/* border: 2px solid red; */
+				margin: 200px auto;
+				position: relative;
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				transform: rotateX(30deg) rotateY(30deg);
+			}
+			#wrap > #all > .bg{
+				width: 300px;
+				height: 300px;
+				background-color: rgba(0,0,0,0.3);
+				/* opacity: 0.3; */
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#all > div:nth-child(1){
+				transform: translateZ(150px);
+			}
+			/* #all > div:nth-child(1):hover{
+				transform: translateZ(200px);
+			} */
+			#all > div:nth-child(2){
+				transform: rotateY(180deg) translateZ(150px);
+			}
+			/* #all > div:nth-child(2):hover{
+				transform: rotateY(180deg) translateZ(200px);
+			} */
+			#all > div:nth-child(3){
+				transform: rotateY(90deg) translateZ(150px);
+			}
+			#all > div:nth-child(4){
+				transform: rotateY(-90deg) translateZ(150px);
+			}
+			#all > div:nth-child(5){
+				transform: rotateX(90deg) translateZ(150px);
+			}
+			#all > div:nth-child(6){
+				transform: rotateX(-90deg) translateZ(150px);
+			}
+			#all > .bg:hover{
+				transform: translateZ(200px);
+			}
+			#small{
+				width: 100px;
+				height: 100px;
+				/* border: 2px solid red; */
+				margin-left: 100px;
+				margin-top: 100px;
+				position: relative;
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				/* transform: rotateX(30deg) rotateY(30deg); */
+			}
+			#small > img{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#small > img:nth-child(1){
+				transform: translateZ(50px);
+			}
+			#small > img:nth-child(2){
+				transform: rotateY(180deg) translateZ(50px);
+			}
+			#small > img:nth-child(3){
+				transform: rotateY(90deg) translateZ(50px);
+			}
+			#small > img:nth-child(4){
+				transform: rotateY(-90deg) translateZ(50px);
+			}
+			#small > img:nth-child(5){
+				transform: rotateX(90deg) translateZ(50px);
+			}
+			#small > img:nth-child(6){
+				transform: rotateX(-90deg) translateZ(50px);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="all">
+				<div class="bg"></div>
+				<div class="bg"></div>
+				<div class="bg"></div>
+				<div class="bg"></div>
+				<div class="bg"></div>
+				<div class="bg"></div>
+				<div id="small">
+					<img src="img/lol1.png" alt="">
+					<img src="img/lol1.png" alt="">
+					<img src="img/lol1.png" alt="">
+					<img src="img/lol1.png" alt="">
+					<img src="img/lol1.png" alt="">
+					<img src="img/lol1.png" alt="">
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>房子</title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			#house{
+				width: 100%;
+				height: 800px;
+				background:linear-gradient(to bottom, skyblue 70%, greenyellow);
+				position:relative;
+				overflow: hidden;
+				
+			}
+			#house>div{
+				position:absolute;
+				
+			}
+			#main{
+				left:0;
+				right:0;
+				bottom:80px;
+				margin:auto;
+				width: 300px;
+				height: 350px;
+				background: #C36CA6;
+				border:2px solid white;
+				border-radius: 150px 150px 0 0;
+				/*-overflow: hidden;*/
+				z-index:10;
+			}
+			#main>div{
+				z-index:10;
+			}
+			#main>#front{
+				position:absolute;
+				width: 100%;
+				height: 210px;
+				margin-top:140px;
+				border-top:2px solid white;
+				background:#EBDEBB;
+			}
+			#front~ div{
+				position: absolute;
+				width: 50px;
+				height: 80px;
+				background:#B96216;
+				border:2px solid #241115;
+			}
+			#main>#door_left{
+				left:98px;
+				bottom:0;
+				border-radius:50px 0 0 0/50px 0 0 0;
+			}
+			#main>#door_right{
+				left:152px;
+				bottom:0;
+				border-radius:0 50px 0 0/0 50px 0 0 ;
+			}
+			.knob{
+				position:absolute;
+				width: 15px;
+				height: 15px;
+				-background:#241115;
+				border-radius: 50%;
+				border: 1px solid #241115;
+			}
+			#door_left>.knob{
+				bottom:20px;
+				right:5px
+			}
+			#door_right>.knob{
+				bottom:20px;
+				left:5px
+			}
+			#main>#windows{
+				width: 60px;
+				height: 60px;
+				background:#692219;
+				bottom:120px;
+				right: 30px;
+			}
+			.window{
+				float:left;
+				width: 28px;
+				height: 28px;
+				border:1px solid #AE8759;
+				background:#B1D4E0;
+			}
+			#dots{
+				z-index:10;
+				-background: red;
+				width: 300px;
+				height: 150px;
+				left:0;
+				right:0;
+				margin:auto;
+				bottom:290px
+			}
+			#dots>div:nth-child(-n+5){
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				background: yellow;
+				border-radius: 50%;
+			}
+			#dots>#dot1{
+				bottom:10px;
+				left:35px;
+			}
+			#dots>#dot2{
+				bottom:20px;
+				left:130px;
+			}
+			#dots>#dot3{
+				bottom:15px;
+				left:210px;
+			}
+			#dots>#dot4{
+				bottom:70px;
+				left:160px;
+			}
+			#dots>#dot5{
+				bottom:60px;
+				left:70px;
+			}
+			#main>#chimney{
+				position:absolute;
+				-background:blue;
+				border:none;
+				width: 150px;
+				height: 300px;
+				top:-200px;
+				right:-50px;
+				z-index:5;
+			}
+		
+			#chimney>*{
+				position:absolute;
+			}
+			#chimney>#base{
+				width:30px;
+				height: 60px;
+				background:mediumpurple;
+				bottom:60px;
+				left:20px;
+				box-shadow: 1px 1px 1px 1px;
+			}
+			#chimney>#top{
+				width:50px;
+				height: 20px;
+				background:blueviolet;
+				bottom:120px;
+				left:10px;
+				border-radius: 5px;
+				box-shadow: 1px 1px 1px 1px;
+			}
+			#chimney>#smoke1{
+				width: 100px;
+				height: 30px;
+				background: #EDE9DF;
+				opacity: 0.6;
+				border-radius: 50%;
+				top:-50px;
+				left:120px;
+				box-shadow:1px 1px 50px 50px #EDE9DF;
+			}
+			#chimney>#smoke2{
+				width: 50px;
+				height: 15px;
+				background: #EDE9DF;
+				opacity:0.8;
+				border-radius: 50%;
+				top:130px;
+				left:30px;
+				box-shadow:1px 1px 10px 10px #EDE9DF;
+			}
+			#chimney>#smoke3{
+				width: 80px;
+				height: 22px;
+				background: #EDE9DF;
+				opacity:0.8;
+				border-radius: 50%;
+				top:60px;
+				left:55px;
+				box-shadow:1px 1px 30px 30px #EDE9DF;
+			}
+			#main>#rooftop{
+				width: 300px;
+				height: 150px;
+				background: #C36CA6;
+				border-radius: 150px 150px 0 0;
+				border:none;
+			}
+			#sun{
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: radial-gradient(circle,#FBF038,yellow);
+				box-shadow: 0 0 20px 20px #FBF038,0 0 10px 10px yellow inset;
+				top:50px;
+				left:200px;
+			}
+			#rainbow{
+				width: 720px;
+				height: 360px;
+				right:-200px;
+				top:50px;
+				border-radius: 360px 360px 0 0;
+				background: red;
+				background:radial-gradient(farthest-side circle at bottom center,transparent 220px,rgb(139,0,255) 220px,rgb(139,0,255) 240px,blue 240px,blue 260px,rgb(0,127,255) 260px,rgb(0,127,255) 280px,green 280px,green 300px,yellow 300px,yellow 320px,rgb(255,165,0) 320px,rgb(255,165,0) 340px,red 340px)
+			}
+		</style>
+	</head>
+	<body>
+		<div id="house">
+			<div id="main">
+				<div id="chimney">
+					<div id="base"></div>
+					<div id="top"></div>
+					<div id="smoke1"></div>
+					<div id="smoke2"></div>
+					<div id="smoke3"></div>
+				</div>
+				
+				<div id="front"></div>
+				<div id="door_left">
+					<div class="knob"></div>
+				</div>
+				<div id="door_right">
+					<div class="knob"></div>
+				</div>
+				<div id="windows">
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+					<div class="window"></div>
+				</div>
+				<div id="rooftop"></div>
+			</div>
+			<div id="dots">
+				<div id="dot1"></div>
+				<div id="dot2"></div>
+				<div id="dot3"></div>
+				<div id="dot4"></div>
+				<div id="dot5"></div>
+			</div>
+			<div id="sun"></div>
+			
+			<div id="rainbow"></div>
+		</div>
+	</body>
+</html>

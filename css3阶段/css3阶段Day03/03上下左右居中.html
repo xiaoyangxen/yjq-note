@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			#wrap {
+				width: 800px;
+				height: 600px;
+				border: 3px solid black;
+				margin: 50px auto;
+				position: relative;
+			}
+
+			/* 上下左右居中的方式:1.定位+margin */
+			/* #wrap img{
+				width: 150px;
+				height: 200px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				相对于自身标签移动
+				margin-left: -75px;
+				margin-top: -100px;
+			} */
+			/* 2.定位+移动 */
+			#wrap img {
+				position: absolute;
+				/* 百分比相对于父级标签宽高百分比 */
+				left: 50%;
+				top: 50%;
+				/* x轴平移动,正数代表向右移动,反之,向左移动 */
+				/* transform: translateX(); */
+				/* 移动中的百分比是相对于该标签宽高而言的 */
+				transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<img src="img/2.jpg" alt="">
+		</div>
+		<form action="" method="post">
+
+			<input type="submit" value="" />
+		</form>
+		<div style="width: 200px; height: 40px;position: relative;">
+			<select class="lay-comboBOX lay-comboBOX-btn1" name="demo1" id="demo1" style="width: 70px;height: 28px;">
+				<option value="a1">湖州市</option>
+				<option value="a2">湖州市</option>
+				<option value="a3">湖州市</option>
+			</select>
+			<select class="lay-comboBOX lay-comboBOX-btn2" name="demo2" id="demo2" style="width: 100px;height: 28px;">
+				<option value="a4">日常检查情况</option>
+				<option value="a5">日常检查情况</option>
+				<option value="a6">日常检查情况</option>
+			</select>
+		</div>
+
+	</body>
+</html>

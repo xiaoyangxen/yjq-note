@@ -1,0 +1,248 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 20px;
+	background-color: #f9f9f9;
+}
+#header{
+	width: 18.75rem;
+	height: 3rem;
+	background-color: #b91b34;
+	overflow: hidden;
+}
+#search{
+	width: 12rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	background-color: white;
+	margin-left: 2rem;
+	margin-top: 0.5rem;
+	display: inline-block;
+	
+}
+#search > img{
+	margin-top: 0.2rem;
+	margin-left: 0.5rem;
+	height: 70%;
+	float: left;
+}
+#search > input{
+	font-size: 1rem;
+	color: lightgray;
+	width: 9rem;
+	height: 1.8rem;
+	margin-top: 0;
+	margin-left: 0.6rem;
+	border: none;
+	outline: none;
+}
+#login{
+	margin-top: 0.5rem;
+	margin-right: 1rem;
+	float: right;
+}
+#login > a{
+	font-size: 0.8rem;
+	color: white;
+	text-decoration: none;
+}
+#wrap{
+	width: 18.75rem;
+	
+}
+#div1{
+	width: 18.75rem;
+}
+#wrap > .div1 > img{
+	width: 100%;
+}
+.div2{
+	overflow: hidden;
+}
+#wrap > .div2 > .A{
+	width: 3rem;
+	height: 3rem;
+	font-size: 0.4rem;
+	border-radius: 50%;
+	background-color: white;
+	overflow: hidden;
+	float: left;
+	margin-left: 1.25rem;
+	margin-top: 1rem;
+}
+#wrap > .div2 > .A > img{
+	width: 50%;
+	height: 30%;
+	display: block;
+	margin: 0.4rem auto;
+}
+#wrap > .div2 > .A > a{
+	text-decoration: none;
+	font-size: 0.4rem;
+	color: black;
+	margin-left: 0.2rem;
+}
+#wrap > .div2 > .A > a:hover{
+	text-decoration: underline; 
+}
+#wrap > .div3{
+	width: 18.75rem;
+	
+	margin-top: 0.8rem;
+	background-color: red;
+	position: relative;
+}
+#wrap > .div3 > div:nth-last-of-type(1){
+	width: 5.8rem;
+	height: 0.01rem;
+	background-color: black;
+	position: absolute;
+	left: 1.5rem;
+	top: 0.5rem;
+}
+#wrap > .div3 > span{
+	font-size: 0.8rem;
+	color: black;
+	float: left;
+	position: absolute;
+	left: 7.7rem;
+}
+#wrap > .div3 > div:nth-last-of-type(2){
+	width: 5.8rem;
+	height: 0.01rem;
+	background-color: black;
+	position: absolute;
+	right: 1.5rem;
+	top: 0.5rem;
+}
+.div4{
+	width: 18.75rem;
+	background-color: red;
+	position: relative;
+	top: 2rem;
+}
+.div4 > img:nth-child(1){
+	width: 10.65rem;
+	position: absolute;
+	left: 0.5rem;
+}
+.div4 > img:nth-child(2){
+	width: 6rem;
+	position: absolute;
+	right: 0.5rem;
+}
+.div4 > a > img:nth-of-type(1){
+	width: 17.375rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 5rem;
+}
+.div4 > a:nth-of-type(2)> img{
+	width: 17.375rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 10.5rem;
+}
+.div4 > a:nth-of-type(3) > img{
+	width: 17.375rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 16rem;
+}
+.div4 > a:nth-of-type(4) > img{
+	width: 17.375rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 21.5rem;
+}
+.div4 > a:nth-of-type(5) > img{
+	width: 17.375rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 27rem;
+}
+#wrap > .div5{
+	width: 18.75rem;
+	height: 2rem;
+	margin-top: 0.8rem;
+	background-color: #f9f9f9;
+	position: relative;
+	left: 0;
+	top: 34.5rem;
+}
+#wrap > .div5 > div:nth-last-of-type(1){
+	width: 5.8rem;
+	height: 0.01rem;
+	background-color: black;
+	position: absolute;
+	left: 1.5rem;
+	top: 0.5rem;
+}
+#wrap > .div5 > span{
+	font-size: 0.8rem;
+	color: black;
+	float: left;
+	position: absolute;
+	left: 7.7rem;
+}
+#wrap > .div5 > div:nth-last-of-type(2){
+	width: 5.8rem;
+	height: 0.01rem;
+	background-color: black;
+	position: absolute;
+	right: 1.5rem;
+	top: 0.5rem;
+}
+.div6{
+	width: 18.75rem;
+	margin-bottom: 10rem;
+	position: relative;
+	top: 34rem;
+}
+.div6 > .B{
+	width: 8.5rem;
+	margin-left: 0.5rem;
+	float: left;
+	/* border: 1px solid red; */
+}
+.div6 > .B > img{
+	width: 100%;
+}
+.div6> .B > p{
+	font-size: 0.6rem;
+}
+.div6> .B > span{
+	font-size: 0.8rem;
+	color: red;
+}
+#foot{
+	width: 18.75rem;
+	height: 3rem;
+	background-color: #f9f9f9;
+	/* border: 1px solid red; */
+	position: fixed;
+	left: 0;
+	bottom: 0rem;
+}
+#foot > div{
+	width: 1.6rem;
+	margin-left: 2.5rem;
+	float: left;
+}
+#foot > div > img{
+	width: 100%;
+	vertical-align: bottom;
+}
+#foot > div > a{
+	font-size: 0.7rem;
+	color: #000000;
+	text-decoration: none;
+}
+#foot > div:nth-of-type(1) > a{
+	color: #B91B34;
+}
+#foot > div:nth-of-type(1) > a:hover{
+	text-decoration: underline;
+}

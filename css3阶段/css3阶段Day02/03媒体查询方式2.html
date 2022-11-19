@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.A1,.A2,.A3,.A4{
+				height: 200px;
+				float: left;
+				color: white;
+				text-align: center;
+				font-size: 50px;
+			}
+			.A1{
+				background-color: red;
+			}
+			.A2{
+				background-color: blue;
+			}
+			.A3{
+				background-color: pink;
+			}
+			.A4{
+				background-color: gray;
+			}
+			@media screen and (max-width:900px) {
+				.A1,.A2,.A3,.A4{
+					width: 41%;
+					margin-left: 6%;
+				}
+			}
+			@media screen and (min-width:901px) {
+				.A1,.A2,.A3,.A4{
+					width: 20%;
+					margin-left: 4%;
+				}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="A1">A</div>
+		<div class="A2">B</div>
+		<div class="A3">C</div>
+		<div class="A4">D</div>
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#wrap{
+				width: 750px;
+				height: 750px;
+				border-radius: 50%;
+				margin: 50px auto;
+				background-color: #22bfe8;
+				border: 2px solid black;
+				position: relative;
+			}
+			#face{
+				width: 600px;
+				height: 540px;
+				background-color: white;
+				border-radius: 47%;
+				border: 2px solid black;
+				position: absolute;
+				left: 50%;
+				bottom: 50px;
+				transform: translateX(-50%);
+
+			}
+			[id$="eye"]{
+				width: 150px;
+				height: 190px;
+				border: 2px solid black;
+				background-color: white;
+				border-radius: 45%;
+			}
+			#lefteye{
+				position: absolute;
+				left: 220px;
+				top: 85px;
+			}
+			#righteye{
+				position: absolute;
+				right: 223px;
+				top: 85px;
+			}
+			[class^="black"]{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background-color: black;
+			}
+			.blackeye1{
+				position: absolute;
+				right: 30px;
+				bottom: 36px;
+			}
+			.blackeye2{
+				position: absolute;
+				left: 30px;
+				bottom: 36px;
+			}
+			#red{
+				width: 72px;
+				height: 72px;
+				border-radius: 50%;
+				border: 2px solid black;
+				background-image: radial-gradient(20% 20% at 50px 25px,white,#c73f16);
+				position: absolute;
+				left: 260px;
+				top: 90px;
+			}
+			#line{
+				width: 3px;
+				height: 250px;
+				background-color: black;
+				position: absolute;
+				left: 296px;
+				top: 164px;
+			}
+			 #mouse{
+				width: 300px;
+				height: 150px;
+				background-color: transparent;
+				border-radius: 0 0 150px 150px;
+				border-bottom: 4px solid black;
+				
+				position: absolute;
+				left: 150px;
+				bottom: 120px;
+				/* border-bottom-left-radius: 50px;
+				border-bottom-right-radius: 50px; */
+				/* overflow: hidden; */
+			}
+			[class^="bread"]{
+				width: 140px;
+				height: 3px;
+				background-color: black;
+			}
+			.bread1{
+				position: absolute;
+				left: 100px;
+				top: 250px;
+			}
+			.bread4{
+				position: absolute;
+				right: 100px;
+				top: 250px;
+			}
+			.bread,.bread5{
+				transform: rotateZ(20deg);
+			}
+			.bread{
+				position: absolute;
+				left: 110px;
+				top: 200px;
+			}
+			.bread5{
+				position: absolute;
+				right: 110px;
+				bottom: 240px;
+			}
+			.bread2,.bread3{
+				transform: rotateZ(-20deg);
+			}
+			.bread2{
+				position: absolute;
+				left: 110px;
+				bottom: 240px;
+			}
+			.bread3{
+				position: absolute;
+				right: 110px;
+				top: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="face">
+				<!-- <div id="nose"> -->
+					<div id="red"></div>
+					<div id="line"></div>
+				<!-- </div> -->
+				<div id="mouse"></div>
+				<div class="bread"></div>
+				<div class="bread1"></div>
+				<div class="bread2"></div>
+				<div class="bread3"></div>
+				<div class="bread4"></div>
+				<div class="bread5"></div>
+			</div>
+			<div id="lefteye">
+				<div class="blackeye1"></div>
+			</div>
+			<div id="righteye">
+				<div class="blackeye2"></div>
+			</div>
+			<!-- <div id="face">
+				<div id="nose">
+					<div id="red"></div>
+					<div id="line"></div>
+				</div>
+				<div id="mouse"></div>
+				<div class="beard"></div>
+				<div class="bread1"></div>
+				<div class="bread2"></div>
+				<div class="bread3"></div>
+				<div class="bread4"></div>
+				<div class="bread5"></div>
+			</div> -->
+		</div>
+	</body>
+</html>

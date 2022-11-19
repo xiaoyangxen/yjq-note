@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 20px;
+	background-color: #f9f9f9;
+}
+#header{
+	width: 18.75rem;
+	height: 3.5rem;
+	background-color: #f9f9f9;
+	
+	/* border: 1px solid red; */
+}
+#header > a:nth-of-type(1) {
+	height: 3rem;
+	margin-left: 1rem;
+	float: left;
+}
+#header > a:nth-of-type(2) {
+	/* display: inline-block; */
+	text-decoration: none;
+	margin-top: 1rem;
+	margin-left: 4rem;
+}
+#header > a > img{
+	margin-top: 1rem;
+	height: 50%;
+}
+#header > p{
+	font-size: 1rem;
+	color: gray;
+	display: inline-block;
+	margin-top: 1rem;
+	margin-left: 4rem;
+}
+.div1{
+	width: 17.75rem;
+	font-size: 0.7rem;
+	color: gray;
+	/* padding: 0.5rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem; */
+}
+.div1 > div{
+	margin: 3rem 0.5rem;
+}
+.div2{
+	width: 18.75rem;
+}
+.div2 > p{
+	font-size: 1.2rem;
+	color: gray;
+	margin-left: 1rem;
+}
+.div2 > div{
+	width: 18.75rem;
+	height: 2rem;
+	/* border: 1px solid red; */
+	/* display: inline-block; */
+}
+.div2 > div > input{
+	width: 12rem;
+	background-color: white;
+	height: 1.8rem;
+	/* margin-top: 0.3rem; */
+	margin-left: 1rem;
+	border: none;
+	outline: none;
+}
+.div2 > div > div{
+	width: 4.5rem;
+	height: 1.8rem;
+	margin-left: 0.5rem;
+	color: white;
+	background-color: #B91B34;
+	font-size: 0.8rem;
+	display: inline-block;
+	text-align: center;
+	line-height: 1.8rem;
+	margin-top: 0.1rem;
+}
+.div3{
+	width: 18.75rem;
+	margin-top: 2rem;
+}
+.div3 > p{
+	font-size: 1.2rem;
+	color: gray;
+	margin-left: 1rem;
+}
+.div3 > div > input{
+	width: 16.75rem;
+	background-color: white;
+	height: 1.8rem;
+	/* margin-top: 0.3rem; */
+	margin-left: 1rem;
+	border: none;
+	outline: none;
+}
+.div4{
+	width: 14rem;
+	height: 2rem;
+	background-color: #B91B34;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 2rem;
+	float: left;
+	margin: 2rem auto;
+	margin-left: 2rem;
+}

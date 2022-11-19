@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 20px;
+}
+#header{
+	width: 18.75rem;
+	height: 3.5rem;
+	background-color: #f9f9f9;
+	overflow: hidden;
+	/* border: 1px solid red; */
+}
+#header > a {
+	height: 3rem;
+	margin-left: 1rem;
+	float: left;
+}
+#header > a > img{
+	margin-top: 1rem;
+	height: 50%;
+}
+#header > div > a{
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: gray;
+	margin-right: 1rem;
+	display: inline-block;
+	margin-top: 0.8rem;
+}
+#header > div > a:nth-child(1){
+	margin-left: 2rem;
+}
+#header > div > a:hover{
+	border-bottom: 0.2rem solid red;
+}
+#wrap{
+	width: 18.75rem;
+}
+.div1{
+	background-color: gray;
+	width: 18.75rem;
+	height: 3rem;
+	font-size: 1rem;
+}
+.div1 > a > div{
+	width: 9.3rem;
+	height: 3rem;
+	float: left;
+	text-align: center;
+	line-height: 3rem;
+}
+.div1 > a > div:hover{
+	background-color: white;
+}
+.div1 > a{
+	text-decoration: none;
+	color: black;
+}
+#wrap > img{
+	width: 100%;
+}
+#foot{
+	width: 18.75rem;
+	height: 3rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #f9f9f9;
+}
+.A{
+	width: 2rem;
+	height: 3rem;
+	font-size: 0.6rem;
+	float: left;
+	margin-left: 1.5rem;
+}
+.A > p{
+	text-align: center;
+}
+.A > img{
+	width: 100%;
+}
+.B1{
+	width: 5rem;
+	height: 3rem;
+	float: left;
+	background-color: #B91B34;
+	text-align: center;
+	line-height: 3rem;
+	margin-left: 1.7rem;
+	color: white;
+	font-size: 0.8rem;
+	/* color: white; */
+}
+.B2{
+	
+	width: 5rem;
+	height: 3rem;
+	float: left;
+	background-color: #dd771e;
+	text-align: center;
+	line-height: 3rem;
+	
+}
+.B2 > a{
+	text-decoration: none;
+	color: white;
+	font-size: 0.8rem;
+}
+

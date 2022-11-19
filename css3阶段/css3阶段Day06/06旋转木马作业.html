@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				perspective: 1000px;
+				background-color: black;
+			}
+			@keyframes movey{
+				0%{
+					transform: rotateY(0deg);
+				}
+				100%{
+					transform: rotateY(1800deg);
+				}
+			}
+			#wrap{
+				width: 800px;
+				height: 600px;
+				/* border: 2px solid white; */
+				margin: 300px auto;
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				/* 关键帧名字 */
+				-webkit-animation-name: movey;
+				-moz-animation-name: movey;
+				-o-animation-name: movey;
+				animation-name: movey;
+				/* 执行一次时间 */
+				-webkit-animation-duration: 20s;
+				-moz-animation-duration: 20s;
+				-o-animation-duration: 20s;
+				animation-duration: 20s;
+				/* 执行次数 */
+				/* -webkit-animation-iteration-count: infinite;
+				-moz-animation-iteration-count: infinite;
+				-o-animation-iteration-count: infinite;
+				animation-iteration-count: infinite; */
+				-webkit-animation-iteration-count: 3;
+				-moz-animation-iteration-count: 3;
+				-o-animation-iteration-count: 3;
+				animation-iteration-count: 3;
+				/* 动画执行速度 */
+				-webkit-animation-timing-function: linear;
+				-moz-animation-timing-function: linear;
+				-o-animation-timing-function: linear;
+				animation-timing-function: linear;
+			}
+			@keyframes move2{
+				0%{
+					transform: rotateX(0) rotateY(0);
+				}
+				25%{
+					transform: rotateX(-40deg) rotateY(-40deg);
+				}
+				50%{
+					transform: rotateX(40deg) rotateY(40deg);
+				}
+				75%{
+					transform: rotateX(-40deg) rotateY(-40deg);
+				}
+				100%{
+					transform: rotateX(40deg) rotateY(40deg);
+				}
+			}
+			#all {
+				width: 150px;
+				height: 200px;
+				/* border: 2px solid red; */
+				position: relative;
+				margin: 200px auto;
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				/* transform: rotateX(30deg) rotateY(30deg); */
+				/* 关键帧名字 */
+				-webkit-animation-name: move2;
+				-moz-animation-name: move2;
+				-o-animation-name: move2;
+				animation-name: move2;
+				/* 执行一次时间 */
+				-webkit-animation-duration: 20s;
+				-moz-animation-duration: 20s;
+				-o-animation-duration: 20s;
+				animation-duration: 20s;
+				/* 执行次数 */
+				/* -webkit-animation-iteration-count: infinite;
+				-moz-animation-iteration-count: infinite;
+				-o-animation-iteration-count: infinite;
+				animation-iteration-count: infinite; */
+				-webkit-animation-iteration-count: 3;
+				-moz-animation-iteration-count: 3;
+				-o-animation-iteration-count: 3;
+				animation-iteration-count: 3;
+				/* 动画执行速度 */
+				-webkit-animation-timing-function: linear;
+				-moz-animation-timing-function: linear;
+				-o-animation-timing-function: linear;
+				animation-timing-function: linear;
+			}
+			/* #all > div{
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				
+			} */
+			#all > img{
+				width: 100%;
+				height: 100%;
+				border-radius: 30px;
+				vertical-align: top;
+				position: absolute;
+				left: 0;
+				top: 0;
+				-webkit-box-reflect: below 30px linear-gradient(to top,blue,transparent 70%);
+			}
+			#all > img:nth-child(1){
+				transform: translateZ(250px);
+			}
+			/* #all > div > img:nth-child(2){
+				transform: rotateY(180deg) translateZ(200px);
+			} */
+			#all > img:nth-child(2){
+				transform: rotateY(180deg) translateZ(250px);
+			}
+			#all > img:nth-child(3){
+				transform: rotateY(90deg) translateZ(250px);
+			}
+			#all > img:nth-child(4){
+				transform: rotateY(-90deg) translateZ(250px);
+			}
+			#all > img:nth-child(5){
+				transform: rotateY(45deg) translateZ(250px);
+			}
+			#all > img:nth-child(6){
+				transform: rotateY(-45deg) translateZ(250px);
+			}
+			#all > img:nth-child(7){
+				transform: rotateY(135deg) translateZ(250px);
+			}
+			#all > img:nth-child(8){
+				transform: rotateY(-135deg) translateZ(250px);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="all">
+				<img src="img/壁纸1.jpg" alt="">
+				<img src="img/壁纸2.jpg" alt="">
+				<img src="img/壁纸3.jpg" alt="">
+				<img src="img/壁纸4.jpg" alt="">
+				<img src="img/壁纸5.jpg" alt="">
+				<img src="img/壁纸6.jpg" alt="">
+				<img src="img/壁纸7.jpg" alt="">
+				<img src="img/壁纸8.jpg" alt="">
+			</div>
+		</div>
+		<!-- <div id="all">
+			<img src="img/壁纸1.jpg" alt="">
+			<img src="img/壁纸2.jpg" alt="">
+			<img src="img/壁纸3.jpg" alt="">
+			<img src="img/壁纸4.jpg" alt="">
+			<img src="img/壁纸5.jpg" alt="">
+			<img src="img/壁纸6.jpg" alt="">
+			<img src="img/壁纸7.jpg" alt="">
+			<img src="img/壁纸8.jpg" alt="">
+		</div> -->
+	</body>
+</html>

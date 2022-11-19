@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	background-image: url(../img/bc.png);
+	font-size: 20px;
+}
+#wrap{
+	width: 18.85rem;
+	height: 34.15;
+	position: relative;
+}
+#wrap > img:nth-child(1){
+	width: 18.85rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#wrap > img:nth-child(2){
+	width: 18.85rem;
+	position: absolute;
+	left: 0;
+	top: 14.7rem;
+}
+#wrap > #div1{
+	font-size: 0.9rem;
+	width: 8.725rem;
+	height: 4.775rem;
+	position: absolute;
+	left: 2.025rem;
+	top: 4.6rem;
+	opacity: 0;
+	-webkit-animation: text 1s ease ;
+	-o-animation: text 1s ease ;
+	animation: text 1s ease ;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+#wrap > #div2{
+	font-size: 0.998rem;
+	width: 9.375rem;
+	height: 4.225rem;
+	position: absolute;
+	left: 8.35rem;
+	top: 21.2rem;
+	opacity: 0;
+	-webkit-animation: text 1s ease ;
+	-o-animation: text 1s ease ;
+	animation: text 1s ease ;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+#wrap > #div1 > img,#wrap > #div2 > img{
+	width: 100%;
+}
+#div1 > p{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#div2 > p{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+@keyframes text{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}

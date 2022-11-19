@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			article{
+				border: 3px solid #00FFFF;
+				width: 500px;
+				height: 500px;
+				display: flex;
+				/* inline-flex:把该元素变为行内元素 */
+				/* flex-direction: row; */
+				/* flex-direction默认(row)为行排列
+					row-reverse翻转行排列
+					column 从上到下排列
+					column-reverse 从下到上排列
+				 */
+				/* 盒子宽度不够时会压缩里面的元素,使用flex-wrap可以控制元素折到下一行,默认值为wrap,wrap-reverse翻转折行 */
+				/* flex-wrap: wrap-reverse; */
+				/* 把flex-direction和flex-wrap整一块 */
+				flex-flow: row wrap;
+				/* 从主轴的(开始/结束)对齐
+				justify-content: flex-start;
+				justify-content: flex-end; */
+				/* 平均分配,左右两边的元素会靠着边 */
+				justify-content: space-between;
+				/* 两边有空隙，中间的间隔为最边上间隔的两倍 */
+				justify-content: space-around;
+				/* 完全的平均分配 */
+				justify-content: space-evenly;
+				/* 交叉轴的对齐方式 */
+				align-items: flex-end;
+				align-items: center;
+				/* 交叉轴方向拉伸,但是下方设置的元素高度优先级较高,需要删掉元素的height才可以设置成功 */
+				align-items: stretch;
+			}
+			article div:nth-child(1) {
+				flex-grow: 0;
+			}
+			article div:nth-child(2) {
+				flex-grow: 3;
+				order: 3;
+			}
+			article div:nth-child(3) {
+				flex-grow: 3;
+				order: -1;
+				数字越大越靠下(相对主轴的方向)
+			}
+			article div{
+				/* 元素的可用空间分配 */
+				/* flex: flex-grow flex-shrink flex-basis; */
+				
+				/* flex-grow: 1; 放大*/
+				/* flex-shrink: 0;flex-shrink缩小比例0表示不缩小 */
+				background-color: yellow;
+				/* background-clip: content-box; */
+				border: 1px solid red;
+				font-size: 20px;
+				/* 基准尺寸,主轴元素的尺寸,优先级大于width或者height */
+				flex-basis: 100px;
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<article>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</article>
+	</body>
+	<script type="text/javascript">
+		console.log(123 == '123')
+	</script>
+</html>

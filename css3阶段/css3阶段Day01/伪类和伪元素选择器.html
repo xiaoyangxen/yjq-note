@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			a:link{
+				color: red;
+			}
+			a:visited{
+				color: orange;
+			}
+			a:active {
+				font-size: 30px;
+			}
+			/* 伪元素选择器 */
+			/* 伪元素:表示页面中一些特殊的并不真实存在的元素(特殊的位置)
+				::first-letter第一个字母
+				::first-line第一行
+				::selection选中的文字
+				::before元素的开始位置
+				::after元素的结束位置
+					-必须结合content使用
+			 */
+			p::first-letter{
+				font-size: 50px;
+			}
+			p::first-line{
+				background-color: yellow
+			}
+			p::selection{
+				color: red;
+			}
+			div::before{
+				content: 'abc';
+				color: red;
+			}
+			div::after{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 伪类选择器
+		：first-child
+		:last-child
+		:nth-child()
+		:first-of-type
+		:last-of-type
+		:nth-of-type()
+		否定伪类，将符合条件的元素在选择器中去除
+		:not()
+		ul > li:not(:nth-child(2)) {} -->
+		<!-- 超链接的伪类
+		:link 用来表示没访问过的连接（正常的链接）
+		:visted 访问过的链接 
+		由于隐私原因，:visted这个伪类只能设置修改链接的颜色
+		-->
+		<a href="https://www.baidu.com" target="_blank">访问过的链接</a>
+		<br>
+		<a href="https://www.baidu123.com">没访问过的链接·</a>
+		
+		<p>1234567897984654896765414111111</p>
+		<div>
+			hello how are you
+		</div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body,html{
+				font-size: 20px;
+			}
+			#one{
+				width: 800px;
+				height: 600px;
+				background-color: red;
+				font-size: 30px;
+			}
+			#two{
+				width: 30rem;
+				height: 400px;
+				background-color: blue;
+				/* font-size: 0.5em; */
+				/* 首行缩进 */
+				/* text-indent: 2em; */
+				/* rem相对于body */
+				font-size: 3rem;
+			}
+			#three{
+				width: 400px;
+				height: 300px;
+				/* 或者是设置高度为10em,因为该标签字体大小为30px，em相当于该标签的字体大小倍数 */
+				background-color: pink;
+				font-size: 0.5em;
+			}
+		</style>
+	</head>
+	<body>
+		总结：em,rem 单位；
+		rem是相对于html中的font-size字体大小而言的，对着html的字体大小改变而改变；
+		em是相对于父级标签字体大小而言，1em相对于父级标签的字体大小（仅用于font-size中）
+		，除此之外，其他样式用到的em单位，都是相对于该标签字体大小倍数而言；
+		在响应式布局中，一般如下操作：
+		1.标签中的字体大小不使用固定值，使用相对值（em,rem）;
+		2.标签的位置和宽高大小使用百分比布局或者rem；
+		3.选择性的使用css样式（媒体查询），根据网页大小尺寸，设置符合需求的样式；
+		4.如果需要适配移动端，则需要添加viewport设置当前宽度为设备宽度，同时让
+		传统的pc端网站能都在移动端正常显示；
+		<div id="one">
+			one
+			<div id="two">
+				two
+				<div id="three">three</div>
+			</div>
+		</div>
+	</body>
+</html>

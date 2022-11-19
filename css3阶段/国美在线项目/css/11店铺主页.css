@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 20px;
+	background-color: #F9F9F9;
+}
+#header{
+	width: 18.75rem;
+	height: 3.5rem;
+	background-color: #f9f9f9;
+	/* border: 1px solid red; */
+}
+#header > a {
+	height: 3rem;
+	margin-left: 1rem;
+	float: left;
+}
+#header > a > img{
+	margin-top: 1rem;
+	height: 50%;
+}
+#search{
+	width: 12rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	background-color: white;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	display: inline-block;
+	
+}
+#search > img{
+	margin-top: 0.2rem;
+	margin-left: 0.5rem;
+	height: 70%;
+	float: left;
+}
+#search > input{
+	font-size: 1rem;
+	color: lightgray;
+	width: 9rem;
+	height: 1.8rem;
+	margin-top: 0;
+	margin-left: 0.6rem;
+	border: none;
+	outline: none;
+}
+#sort{
+	display: inline-block;
+	margin-left: 0.5rem;
+}
+#sort > a{
+	text-decoration: none;
+	color: gray;
+}
+#wrap{
+	width: 18.75rem;
+}
+.div1{
+	width: 18.75rem;
+	position: relative;
+}
+.div1 > img:nth-of-type(1){
+	width: 100%;
+	vertical-align: bottom;
+}
+.div1 > img:nth-of-type(2){
+	width: 30%;
+	vertical-align: top;
+	position: absolute;
+	top: 2.25rem;
+	left: 0;
+}
+.div1 > p{
+	color: white;
+	font-size: 0.8rem;
+	position: absolute;
+	left: 6rem;
+	top: 2.25rem;
+}
+.div1 > img:nth-of-type(3){
+	width: 6rem;
+	vertical-align: top;
+	position: absolute;
+	top: 3.7rem;
+	left: 6rem;
+}
+.div6{
+	width: 18.75rem;
+	margin-bottom: 10rem;
+	position: relative;
+	top: 1rem;
+}
+.div6 > .B{
+	width: 8.5rem;
+	margin-left: 0.5rem;
+	float: left;
+	/* border: 1px solid red; */
+}
+.div6 > .B > img{
+	width: 100%;
+}
+.div6> .B > p{
+	font-size: 0.6rem;
+}
+.div6> .B > span{
+	font-size: 0.8rem;
+	color: red;
+}
+

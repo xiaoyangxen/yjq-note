@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 20px;
+}
+#wrap{
+	width: 18.75rem;
+}
+#top{
+	position: relative;
+}
+#bg{
+	width: 18.75rem;
+}
+#car{
+	width: 15.3rem;
+	position: absolute;
+	left: 1.85rem;
+	top: 3.35rem;
+}
+#back{
+	width: 4.425rem;
+	position: absolute;
+	left: 5.5rem;
+	top: 8.7rem;
+}
+#front{
+	width: 2.975rem;
+	position: absolute;
+	right: 4.125rem;
+	top: 9.8rem;
+}
+@keyframes rotateWheel{
+	0%{
+		transform: rotateZ(0);
+	}
+	100%{
+		transform: rotateZ(360deg);
+	}
+}
+#front,#back{
+	-webkit-animation: rotateWheel 1s linear infinite;
+	-o-animation: rotateWheel 1s linear infinite;
+	animation: rotateWheel 1s linear infinite;
+}
+/* 媒体查询做屏幕适配 */
+/* @media screen and (min-width:413px) and (max-width:415px) {
+	html,body{
+		font-size: 22.08px;
+	}
+}
+@media screen and (min-width:768px) {
+	html,body{
+		font-size: 40.96px;
+	}
+} */

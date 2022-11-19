@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#wrap{
+				width: 1700px;
+				height: 720px;
+				margin: 30px auto;
+				box-shadow: 0px 100px 50px 0px gray;
+				background-image: linear-gradient(to bottom,#87ceeb 70%,#97e29a 90%);
+				position: relative;
+			}
+			#sun{
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background-color: #fcdd29;
+				box-shadow: inset 0px 0px 10px 10px #fffe04,
+							0px 0px 20px 20px #fff8a0;
+				position: absolute;
+				left: 200px;
+				top: 30px;
+			}
+			#rainbow1{
+				width: 720px;
+				height: 360px;
+				background-color: red;
+				/* border-radius: 50%; */
+				/* background-image: radial-gradient(50% 100% at center bottom,red,green); */
+				/* border-top-right-radius: 50%;
+				border-top-left-radius: 50%; */
+				border-radius: 360px 360px 0 0;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+			}
+			#rainbow2{
+				width: 680px;
+				height: 340px;
+				background-color: orange;
+				border-radius: 340px 340px 0 0;
+				margin-top: 20px;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			#rainbow3{
+				width: 640px;
+				height: 320px;
+				background-color: yellow;
+				border-radius: 320px 320px 0 0;
+				margin-top: 20px;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			#rainbow4{
+				width: 600px;
+				height: 300px;
+				background-color: green;
+				border-radius: 300px 300px 0 0;
+				margin-top: 20px;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			#rainbow5{
+				width: 560px;
+				height: 280px;
+				background-color: #5ca9f2;
+				border-radius: 280px 280px 0 0;
+				margin-top: 20px;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			#rainbow6{
+				width: 520px;
+				height: 260px;
+				background-color: blue;
+				border-radius: 260px 260px 0 0;
+				margin-top: 20px;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			#rainbow7{
+				width: 480px;
+				height: 240px;
+				background-color: purple;
+				border-radius: 240px 240px 0 0;
+				margin-top: 20px;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			#hidden{
+				width: 440px;
+				height: 220px;
+				background-color: #87ceeb;
+				border-radius: 220px 220px 0 0;
+				margin-top: 20px;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+			#allhouse{
+				width: 800px;
+				height: 100%;
+				/* border: 1px solid red; */
+				position: absolute;
+				left: 50%;
+				top: 0;
+				margin-left: -400px;
+			}
+			.smoke1{
+				width: 180px;
+				height: 90px;
+				position: absolute;
+				right: 0;
+				top: 20px;
+				/* border-radius: 50%;
+				background-color: white;
+				opacity: 0.7;
+				box-shadow: 0px 0px 20px 10px white; */
+			}
+			.smoke2{
+				width: 140px;
+				height: 70px;
+				position: absolute;
+				right: 150px;
+				top: 150px;
+			}
+			.smoke3{
+				width: 100px;
+				height: 50px;
+				position: absolute;
+				right: 250px;
+				top: 250px;
+			}
+			[class^="smoke"]{
+				border-radius: 50%;
+				background-color: white;
+				opacity: 0.5;
+				box-shadow: 0px 0px 30px 20px white;
+			}
+			#house{
+				width: 300px;
+				height: 400px;
+				border: 2px solid white;
+				position: absolute;
+				left: 180px;
+				bottom: 0px;
+				border-radius: 150px 150px 0px 0px;
+				background-color: #ebdebb;
+				/* border-top-right-radius: 50%;
+				border-top-left-radius: 50%; */
+			}
+			#housetop{
+				width: 100%;
+				height: 50%;
+				background-color: mediumpurple;
+				border-radius: 150px 150px 0px 0px;
+			}
+			[class^="yellow"]{
+				width: 50px;
+				height: 50px;
+				background-color: yellow;
+				border-radius: 50%;
+			}
+			.yellow1{
+				position: absolute;
+				left: 80px;
+				top: 30px;
+			}
+			.yellow2{
+				position: absolute;
+				left: 200px;
+				top: 40px;
+			}
+			.yellow3{
+				position: absolute;
+				left: 50px;
+				bottom: 250px;
+			}
+			.yellow4{
+				position: absolute;
+				left: 120px;
+				top: 100px;
+			}
+			.yellow5{
+				position: absolute;
+				right: 50px;
+				bottom: 250px;
+			}
+			#window{
+				width: 100px;
+				height: 100px;
+				border: 3px solid black;
+				position: absolute;
+				right: 10px;
+				top: 210px;
+			}
+			[class^="small"]{
+				width: 46px;
+				height: 46px;
+				border: 2px solid #FFA500;
+				background-color: skyblue;
+				float: left;
+			}
+			#door{
+				width: 100px;
+				height: 120px;
+				background-color: #b96216;
+				position: absolute;
+				left: 30px;
+				bottom: 0;
+				border-radius: 50px 50px 0px 0px;
+				border: 3px solid black;
+			}
+			#A{
+				width: 4px;
+				height: 100%;
+				background-color: black;
+				position: absolute;
+				left: 48px;
+				bottom: 0px;
+			}
+			/* [[class^="round"]{
+				width: 15px;
+				height: 15px;
+				border: 1px solid black;
+			} */
+			
+			/* [id^="door"]{
+				border: 3px solid black;
+			}
+			[[class^="round"]{
+				width: 15px;
+				height: 15px;
+				border: 1px solid black;
+				border-radius: 50%;
+			} */
+			#round1{
+				width: 15px;
+				height: 15px;
+				border: 2px solid black;
+				border-radius: 50%;
+				position: absolute;
+				left: 20px;
+				bottom: 30px;
+			}
+			#round2{
+				width: 15px;
+				height: 15px;
+				border: 2px solid black;
+				border-radius: 50%;
+				position: absolute;
+				right: 20px;
+				bottom: 30px;
+			}
+			#chimney{
+				width: 50px;
+				height: 100px;
+				/* border: 2px solid red; */
+				position: absolute;
+				right: 320px;
+				bottom: 300px;
+			}
+			#level{
+				width: 50px;
+				height: 30px;
+				background-color: purple;
+				border-radius: 20%;
+			}
+			#vertical{
+				width: 30px;
+				height: 70px;
+				background-color: mediumpurple;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="sun"></div>
+			<div id="rainbow1">
+				<div id="rainbow2">
+					<div id="rainbow3">
+						<div id="rainbow4">
+							<div id="rainbow5">
+								<div id="rainbow6">
+									<div id="rainbow7"><div id="hidden">
+									</div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="allhouse">
+				<div class="smoke1"></div>
+				<div class="smoke2"></div>
+				<div class="smoke3"></div>
+				<div id="chimney">
+					<div id="level"></div>
+					<div id="vertical"></div>
+				</div>
+				<div id="house">
+					<div id="housetop">
+						<div class="yellow1"></div>
+						<div class="yellow2"></div>
+						<div class="yellow3"></div>
+						<div class="yellow4"></div>
+						<div class="yellow5"></div>
+					</div>
+					<div id="window">
+						<div class="small"></div>
+						<div class="small"></div>
+						<div class="small"></div>
+						<div class="small"></div>
+					</div>
+					<div id="door">
+							<div id="round1"></div>
+							<div id="A"></div>
+							<div id="round2"></div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

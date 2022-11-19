@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>旋转立方体</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				height: 100%;
+			}
+			ul{
+				list-style: none;
+			}
+			img{
+				/*当块元素中,嵌套img时,图片下面会有大约4px的偏差,修复这个问题,就需要对图片添加vertical-align:top方式解决*/
+				vertical-align: top;
+			}
+			#wrap{
+				height: 100%;
+				/*让wrap成为定位父级*/
+				position: relative;
+			}
+			/*背景图设置样式*/
+			#wrap>img{
+				width: 100%;
+				height: 100%;
+			}
+			#wrap>ul{
+				position: absolute;
+				/*绝对定位元素,上下左右居中*/
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				/*两个ul都以3d效果展示*/
+				-webkit-transform-style: preserve-3d;
+				/*添加关键帧动画*/
+				/*-webkit-animation: dianli 2s infinite alternate;*/
+			}
+			#inner{
+				width: 100px;
+				height: 100px;
+				-webkit-transform: rotateX(-30deg) rotateY(30deg);
+			}
+			#inner>li{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			/*前*/
+			#inner li:nth-child(1){
+				-webkit-transform: translateZ(50px);
+			}
+			/*后*/
+			#inner li:nth-child(2){
+				-webkit-transform: rotateY(180deg) translateZ(50px);
+			}
+			/*左面*/
+			#inner li:nth-child(3){
+				-webkit-transform: rotateY(-90deg) translateZ(50px);
+			}
+			/*右面*/
+			#inner li:nth-child(4){
+				-webkit-transform: rotateY(90deg) translateZ(50px);
+			}
+			/*上面*/
+			#inner li:nth-child(5){
+				-webkit-transform: rotateX(90deg) translateZ(50px);
+			}
+			/*下面*/
+			#inner li:nth-child(6){
+				-webkit-transform: rotateX(-90deg) translateZ(50px);
+			}
+			
+			
+			
+			#outer{
+				width: 300px;
+				height: 300px;
+				/*
+				 * 背景颜色的值支持:
+				 * 英文,16进制,rgb,rbga
+				 */
+				-webkit-transform: rotateX(-30deg) rotateY(30deg);
+			}
+			#outer>li{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				bottom: 0;
+				background: rgba(0,0,0,0.4);
+				transition: 1s;
+
+			}
+			/*前*/
+			#outer li:nth-child(1){
+				-webkit-transform: translateZ(150px);
+			}
+			/*后*/
+			#outer li:nth-child(2){
+				-webkit-transform: rotateY(180deg) translateZ(150px);
+			}
+			/*左*/
+			#outer li:nth-child(3){
+				-webkit-transform: rotateY(-90deg) translateZ(150px);
+			}
+			/*右*/
+			#outer li:nth-child(4){
+				-webkit-transform: rotateY(90deg) translateZ(150px);
+			}
+			/*上*/
+			#outer li:nth-child(5){
+				-webkit-transform: rotateX(90deg) translateZ(150px);
+			}
+			/*下*/
+			#outer li:nth-child(6){
+				-webkit-transform: rotateX(-90deg) translateZ(150px); 
+			}
+			
+			/*封装关键帧动画*/
+			/*@keyframes dianli{
+				from{
+					-webkit-transform: rotateX(0deg) rotateY(0deg) translate(0,0);
+				}
+				to{
+					-webkit-transform:rotateX(360deg) rotateY(360deg) translate(-200px,200px);
+				}
+			}
+			*/
+			
+			#outer:hover>li:nth-child(1){
+				-webkit-transform: translateZ(250px);
+			}
+			#outer:hover>li:nth-child(2){
+				-webkit-transform: rotateY(180deg) translateZ(250px);
+			}
+			#outer:hover>li:nth-child(3){
+				-webkit-transform: rotateY(-90deg) translateZ(250px);
+			}
+			#outer:hover>li:nth-child(4){
+				-webkit-transform: rotateY(90deg) translateZ(250px);
+			}
+			#outer:hover>li:nth-child(5){
+				-webkit-transform: rotateX(90deg) translateZ(250px);
+			}
+			#outer:hover>li:nth-child(6){
+				-webkit-transform: rotateX(-90deg) translateZ(250px);
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<!--背景图片-->
+			<img src="img/bg.jpg" alt="" />
+			<!--内部的立方体-->
+			<ul id="inner">
+				<li><img src="img/01.png" alt="" /></li>
+				<li><img src="img/02.png" alt="" /></li>
+				<li><img src="img/03.png" alt="" /></li>
+				<li><img src="img/04.png" alt="" /></li>
+				<li><img src="img/05.png" alt="" /></li>
+				<li><img src="img/06.png" alt="" /></li>
+			</ul>
+			
+			<!--外部的立方体-->
+			<ul id="outer">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			
+		</div>
+	</body>
+</html>

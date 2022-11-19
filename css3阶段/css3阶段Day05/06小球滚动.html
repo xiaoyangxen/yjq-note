@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			@keyframes move1{
+				0%{
+					transform: translate(0px,0px);
+				}
+				25%{
+					transform: translate(300px,200px);
+				}
+				50%{
+					transform: translate(600px,0px);
+				}
+				75%{
+					transform: translate(900px,200px);
+				}
+				100%{
+					transform: translate(1200px,0px);
+				}
+			}
+			#wrap{
+				width: 50px;
+				height: 50px;
+				font-size: 30px;
+				/* border: 1px solid black; */
+				/* -webkit-animation-name: move1;
+				-moz-animation-name: move1;
+				-o-animation-name: move1;
+				animation-name: move1;
+				-webkit-animation-duration: 10s;
+				-moz-animation-duration: 10s;
+				-o-animation-duration: 10s;
+				animation-duration: 10s; */
+				animation: move1 10s linear;
+				-webkit-animation-fill-mode: forwards;
+				-moz-animation-fill-mode: forwards;
+				-o-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				
+			}
+			@keyframes rotateball{
+				0%{
+					transform: rotateZ(0deg);
+				}
+				100%{
+					transform: rotateZ(1800deg);
+				}
+			}
+			#wrap .ball{
+				animation: rotateball 10s linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="ball">🏀</div>
+		</div>
+	</body>
+</html>

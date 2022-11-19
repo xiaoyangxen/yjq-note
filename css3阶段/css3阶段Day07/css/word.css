@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 20px;
+}
+#center{
+	width: 18.5rem;
+	height: 16rem;
+	position: relative;
+}
+#bc{
+	width: 17rem;
+	/* margin-top: 1rem;
+	margin-left: 1rem; */
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+}
+#bc > img{
+	width: 100%;
+}
+#center > span{
+	width: 1rem;
+	font-size: 3rem;
+	color: #ffcf10;
+	font-weight: bold;
+	/* display: inline; */
+	/* position: absolute;
+	left: 3rem;
+	top: 2rem; */
+}
+#center > span:nth-of-type(1){
+	position: absolute;
+	left: 1rem;
+	top: 2rem;
+}
+#center > span:nth-of-type(2){
+	position: absolute;
+	right: 3rem;
+	top: 8.45rem;
+}
+
+#word{
+	width: 13rem;
+	position: absolute;
+	left: 4rem;
+	top: 3rem;
+}
+#word > p{
+	width: 13rem;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1rem;
+	opacity: 0;
+}
+@keyframes word{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+#word > p:nth-of-type(1){
+	-webkit-animation: word 2s linear;
+	-o-animation: word 2s linear;
+	animation: word 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+#word > p:nth-of-type(2){
+	-webkit-animation: word 2s linear;
+	-o-animation: word 2s linear;
+	animation: word 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+#word > p:nth-of-type(3){
+	-webkit-animation: word 2s linear;
+	-o-animation: word 2s linear;
+	animation: word 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
+}
+#word > p:nth-of-type(4){
+	-webkit-animation: word 2s linear;
+	-o-animation: word 2s linear;
+	animation: word 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	-o-animation-delay: 3s;
+	animation-delay: 3s;
+}
+#word > p:nth-of-type(5){
+	-webkit-animation: word 2s linear;
+	-o-animation: word 2s linear;
+	animation: word 2s linear;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-delay: 4s;
+	-moz-animation-delay: 4s;
+	-o-animation-delay: 4s;
+	animation-delay: 4s;
+}

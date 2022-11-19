@@ -1,0 +1,38 @@
+#foot{
+	width: 18.75rem;
+	height: 8rem;
+	position: relative;
+}
+#food{
+	width: 18.75rem;
+}
+#arrow{
+	width: 1.225rem;
+	height: 1.250rem;
+	position: absolute;
+	left: 45%;
+	bottom: 0;
+
+}
+@keyframes move{
+	0%{
+		transform: translateY(0rem);
+	}
+	25%{
+		transform: translateY(1rem);
+	}
+	50%{
+		transform: translateY(0rem);
+	}
+	75%{
+		transform: translateY(1rem);
+	}
+	100%{
+		transform: translateY(0rem);
+	}
+}
+#arrow{
+	-webkit-animation: move 3s linear infinite;
+	-o-animation: move 3s linear infinite;
+	animation: move 3s linear infinite;
+}

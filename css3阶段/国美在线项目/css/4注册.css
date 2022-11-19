@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 20px;
+}
+#header{
+	width: 18.75rem;
+	height: 3.5rem;
+	background-color: #f9f9f9;
+	
+	/* border: 1px solid red; */
+}
+#header > a:nth-of-type(1) {
+	height: 3rem;
+	margin-left: 1rem;
+	float: left;
+}
+#header > a:nth-of-type(2) {
+	/* display: inline-block; */
+	text-decoration: none;
+	margin-top: 1rem;
+	margin-left: 4rem;
+}
+#header > a > img{
+	margin-top: 1rem;
+	height: 50%;
+}
+#header > p{
+	font-size: 1rem;
+	color: gray;
+	display: inline-block;
+	margin-top: 1rem;
+	margin-left: 4rem;
+}
+#wrap{
+	width: 18.75rem;
+	/* border: 1px solid red; */
+	overflow: hidden;
+}
+.div1{
+	width: 17rem;
+	height: 1.5rem;
+	margin-top: 3rem;
+	margin-left: 1rem;
+	/* border: 1px solid red; */
+}
+.div1 > img{
+	height: 100%;
+	float: left;
+}
+.div2{
+	width: 17rem;
+	height: 1.5rem;
+	margin-top: 1.5rem;
+	margin-left: 1rem;
+}
+.div2 > img{
+	height: 100%;
+	float: left;
+
+}
+.div3{
+	width: 17rem;
+	height: 1.5rem;
+	margin-top: 1.5rem;
+	margin-left: 1rem;
+}
+.div3 > img{
+	height: 100%;
+	float: left;
+
+}
+.div1 > input,.div2 > input,.div3 > input{
+	width: 14rem;
+	height: 1.5rem;
+	border: none;
+	outline: none;
+	float: left;
+	margin-left: 0.5rem;
+	border-bottom: 0.05rem solid gray;
+}
+.div4 > a{
+	width: 8rem;
+	font-size: 0.8rem;
+	text-decoration: none;
+	color: gray;
+	float: right;
+	margin-top: 1.5rem;
+	margin-right: 0.5rem;
+}
+.div5{
+	width: 14rem;
+	height: 2rem;
+	background-color: #B91B34;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 2rem;
+	float: left;
+	margin: 2rem auto;
+	margin-left: 2rem;
+}
+.div6{
+	width: 18.75rem;
+	height: 4.5rem;
+	/* border: 1px solid blue; */
+	float: left;
+}
+.div6 > img{
+	width: 3.5rem;
+	float: left;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}

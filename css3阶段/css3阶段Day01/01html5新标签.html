@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#vd{
+				width: 400px;
+			}
+			#inp{
+				background-color: yellow;
+				border: 5px solid black;
+				width: 500px;
+				height: 70px;
+				font-size: 50px;
+			}
+			/* 处于聚焦状态时执行的样式 */
+			#inp:focus{
+				background-color: blue;
+				color: white;
+				font-size: 40px;
+				border: 5px solid pink;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- html5相对于上一个版本，标签更加语义化；
+		xhtml版本中，网页头部，中间部分，尾部，各种模块，多数使用div进行
+		布局；html5中提供了专门做页面模块布局的标签元素； -->
+		<!-- xhtml中 -->
+		<div id="head"></div>
+		<div id="center"></div>
+		<div id="footer"></div>
+		<!-- html5中，提供了语义化布局标签 -->
+		
+		<!-- aside 与主体相关的其他内容，侧边栏
+			article 表示一个独立的文章
+		 -->
+		<header>网页的头部</header>
+		<!-- 导航标签 -->
+		<nav></nav>
+		<!-- 网页底部标签 -->
+		<footer></footer>
+		<section></section>
+		<!-- section 区域标签，article侧边栏标签，他们和div的作用是一样的，都是
+		用来定义一个模块；
+		区别：section侧重于使用到区域模块中；
+		article侧重于侧边栏区域标签中； -->
+		<article></article>
+		<!-- 1.meter 电池条标签；（常用语作为电池的剩余电量，游戏中的剩余血量）
+		value  是当前进度的值；范围默认在0~1之间；
+		min 设置最小值，max 设置最大值；value在min-max之间，表示真实长度的百分比 -->
+		<!-- low 范围内的最低值  high范围内的最高值 达到该范围，起警示作用 -->
+		<!-- meter html5新增标签，为了部分浏览器不兼容，需要做兼容性处理；
+		在meter内容部分，写上当前的value值 -->
+		<meter value="0.7" ></meter>
+		<meter min="30" max="100" value="65"></meter>
+		<br>
+		<meter min="0" max="100" value="85" low="20" high="80"></meter>
+		<!-- 2.prograss 进度条，使用场景：音视频的播放进度，缓存进度，下载进度，音量调整，屏幕亮度调整等等；
+		只有min和max值，以及value;没有最高最低值；min只能为0 -->
+		<progress max="100" value="40"></progress>
+		<!-- 3.可选列表 -->
+		<form action="" >
+			<!-- 输入框的list属性和datalist列表的id关联 -->
+			用户名：<input list="show" type="text" placeholder="请输入用户名" />
+			<input type="submit" value="登录"/>
+			<datalist id="show">
+				<option value ="刘涛"></option>
+				<option value="少帅"></option>
+				<option value ="陈佳"></option>
+			</datalist>
+		</form>
+		<!-- 4.audio音频播放标签 
+		src 设置音频播放的路径（网址url或者本地音频地址）
+		autoplay 自动播放（google浏览器中不允许自动播放-非用户主动播放）
+		loop 循环播放模式 
+		muted 静音模式播放
+		controls 开启控制菜单
+		audio 支持格式：mp3格式，wav格式，ogg格式；
+		为了其他浏览器兼容audio标签，我们需要做兼容性处理；
+		在audio内容部分添加source标签，用来处理不同格式的音频播放；
+		-->
+		<audio loop="" muted="" autoplay="" controls="" src="sources/高跟鞋.mp3">
+			对不起您的浏览器不支持
+			<source type="audio/mp3" src="sources/高跟鞋.mp3"></source>
+			<source type="audio/wav" src="sources/高跟鞋.wav"></source>
+			<source type="audio/ogg" src="sources/高跟鞋.ogg"></source>
+		</audio>
+		<!-- 视频播放 video标签 -->
+		<!-- poster 视频播放之前，设置的占位图，第一帧图片（一般用于视频引导和解释）
+		 视频播放支持的格式：mp4,webm,ogg
+		 依然使用source做兼容性处理
+		 -->
+		
+		<video poster="img/2_1.png" id="vd" muted="" controls="" src="sources/a.mp4">
+			<source type="video/mp4" src="sources/a.mp4"></source>
+			<source type="video/webm" src="sources/a.webm"></source>
+			<source type="video/ogg" src="sources/a.ogg"></source>
+		</video>
+		<!-- 上标，下标 -->
+		<span>x</span><sup>2</sup>
+		+
+		<span>y</span><sup>2</sup>
+		=
+		<span>z</span><sup>2</sup>
+		<br>
+		<span>x</span><sub>2</sub>
+		<br>
+		<!-- 文本标记 -->
+		<mark>海峰</mark>
+		<!-- 输入框的可编辑状态 -->
+		<!-- 聚焦：可编辑状态
+		失焦：不可编辑状态 -->
+		qq:<input type="text" autofocus=""/>
+		密码：<input type="text'" disabled=""/>
+		<br>
+		<!-- css设置编辑状态的样式 -->
+		<input type="text" id="inp" />
+		<em>2222</em>
+		<strong>1111</strong>
+		<i>3333</i>
+		
+		
+		<blockquote>
+			缩进，表示一个长引用
+		</blockquote>
+		<!-- q表示一个短引用q里面的文字用引号引起来，q是一个行内元素 -->
+		子曰：<q>学而时习之</q>
+	</body>
+</html>
